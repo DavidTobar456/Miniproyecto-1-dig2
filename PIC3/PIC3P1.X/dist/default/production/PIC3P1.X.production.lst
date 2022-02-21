@@ -1,0 +1,1520 @@
+
+
+Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
+                                                                                               Fri Feb 18 11:31:30 2022
+
+Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
+     1                           	processor	16F887
+     2                           	pagewidth 120
+     3                           	opt	flic
+     4                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     5                           	psect	bssCOMMON,global,class=COMMON,space=1,delta=1,noexec
+     6                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1,noexec
+     7                           	psect	maintext,global,class=CODE,split=1,delta=2
+     8                           	psect	text1,local,class=CODE,merge=1,delta=2
+     9                           	psect	text2,local,class=CODE,merge=1,delta=2
+    10                           	psect	text3,local,class=CODE,merge=1,delta=2
+    11                           	psect	text4,local,class=CODE,merge=1,delta=2
+    12                           	psect	text5,local,class=CODE,merge=1,delta=2
+    13                           	psect	text6,local,class=CODE,merge=1,delta=2
+    14                           	psect	text7,local,class=CODE,merge=1,delta=2
+    15                           	psect	intentry,global,class=CODE,delta=2
+    16                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=2,noexec
+    17                           	dabs	1,0x7E,2
+    18  0000                     
+    19                           ; Version 2.20
+    20                           ; Generated 12/02/2020 GMT
+    21                           ; 
+    22                           ; Copyright © 2020, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    23                           ; All rights reserved.
+    24                           ; 
+    25                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    26                           ; 
+    27                           ; Redistribution and use in source and binary forms, with or without modification, are
+    28                           ; permitted provided that the following conditions are met:
+    29                           ; 
+    30                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    31                           ;        conditions and the following disclaimer.
+    32                           ; 
+    33                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    34                           ;        of conditions and the following disclaimer in the documentation and/or other
+    35                           ;        materials provided with the distribution.
+    36                           ; 
+    37                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    38                           ;        software without specific prior written permission.
+    39                           ; 
+    40                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    41                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    42                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    43                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    44                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    45                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    46                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    47                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    48                           ; 
+    49                           ; 
+    50                           ; Code-generator required, PIC16F887 Definitions
+    51                           ; 
+    52                           ; SFR Addresses
+    53  0000                     	;# 
+    54  0001                     	;# 
+    55  0002                     	;# 
+    56  0003                     	;# 
+    57  0004                     	;# 
+    58  0005                     	;# 
+    59  0006                     	;# 
+    60  0007                     	;# 
+    61  0008                     	;# 
+    62  0009                     	;# 
+    63  000A                     	;# 
+    64  000B                     	;# 
+    65  000C                     	;# 
+    66  000D                     	;# 
+    67  000E                     	;# 
+    68  000E                     	;# 
+    69  000F                     	;# 
+    70  0010                     	;# 
+    71  0011                     	;# 
+    72  0012                     	;# 
+    73  0013                     	;# 
+    74  0014                     	;# 
+    75  0015                     	;# 
+    76  0015                     	;# 
+    77  0016                     	;# 
+    78  0017                     	;# 
+    79  0018                     	;# 
+    80  0019                     	;# 
+    81  001A                     	;# 
+    82  001B                     	;# 
+    83  001B                     	;# 
+    84  001C                     	;# 
+    85  001D                     	;# 
+    86  001E                     	;# 
+    87  001F                     	;# 
+    88  0081                     	;# 
+    89  0085                     	;# 
+    90  0086                     	;# 
+    91  0087                     	;# 
+    92  0088                     	;# 
+    93  0089                     	;# 
+    94  008C                     	;# 
+    95  008D                     	;# 
+    96  008E                     	;# 
+    97  008F                     	;# 
+    98  0090                     	;# 
+    99  0091                     	;# 
+   100  0092                     	;# 
+   101  0093                     	;# 
+   102  0093                     	;# 
+   103  0093                     	;# 
+   104  0094                     	;# 
+   105  0095                     	;# 
+   106  0096                     	;# 
+   107  0097                     	;# 
+   108  0098                     	;# 
+   109  0099                     	;# 
+   110  009A                     	;# 
+   111  009B                     	;# 
+   112  009C                     	;# 
+   113  009D                     	;# 
+   114  009E                     	;# 
+   115  009F                     	;# 
+   116  0105                     	;# 
+   117  0107                     	;# 
+   118  0108                     	;# 
+   119  0109                     	;# 
+   120  010C                     	;# 
+   121  010C                     	;# 
+   122  010D                     	;# 
+   123  010E                     	;# 
+   124  010F                     	;# 
+   125  0185                     	;# 
+   126  0187                     	;# 
+   127  0188                     	;# 
+   128  0189                     	;# 
+   129  018C                     	;# 
+   130  018D                     	;# 
+   131  0000                     	;# 
+   132  0001                     	;# 
+   133  0002                     	;# 
+   134  0003                     	;# 
+   135  0004                     	;# 
+   136  0005                     	;# 
+   137  0006                     	;# 
+   138  0007                     	;# 
+   139  0008                     	;# 
+   140  0009                     	;# 
+   141  000A                     	;# 
+   142  000B                     	;# 
+   143  000C                     	;# 
+   144  000D                     	;# 
+   145  000E                     	;# 
+   146  000E                     	;# 
+   147  000F                     	;# 
+   148  0010                     	;# 
+   149  0011                     	;# 
+   150  0012                     	;# 
+   151  0013                     	;# 
+   152  0014                     	;# 
+   153  0015                     	;# 
+   154  0015                     	;# 
+   155  0016                     	;# 
+   156  0017                     	;# 
+   157  0018                     	;# 
+   158  0019                     	;# 
+   159  001A                     	;# 
+   160  001B                     	;# 
+   161  001B                     	;# 
+   162  001C                     	;# 
+   163  001D                     	;# 
+   164  001E                     	;# 
+   165  001F                     	;# 
+   166  0081                     	;# 
+   167  0085                     	;# 
+   168  0086                     	;# 
+   169  0087                     	;# 
+   170  0088                     	;# 
+   171  0089                     	;# 
+   172  008C                     	;# 
+   173  008D                     	;# 
+   174  008E                     	;# 
+   175  008F                     	;# 
+   176  0090                     	;# 
+   177  0091                     	;# 
+   178  0092                     	;# 
+   179  0093                     	;# 
+   180  0093                     	;# 
+   181  0093                     	;# 
+   182  0094                     	;# 
+   183  0095                     	;# 
+   184  0096                     	;# 
+   185  0097                     	;# 
+   186  0098                     	;# 
+   187  0099                     	;# 
+   188  009A                     	;# 
+   189  009B                     	;# 
+   190  009C                     	;# 
+   191  009D                     	;# 
+   192  009E                     	;# 
+   193  009F                     	;# 
+   194  0105                     	;# 
+   195  0107                     	;# 
+   196  0108                     	;# 
+   197  0109                     	;# 
+   198  010C                     	;# 
+   199  010C                     	;# 
+   200  010D                     	;# 
+   201  010E                     	;# 
+   202  010F                     	;# 
+   203  0185                     	;# 
+   204  0187                     	;# 
+   205  0188                     	;# 
+   206  0189                     	;# 
+   207  018C                     	;# 
+   208  018D                     	;# 
+   209  0000                     	;# 
+   210  0001                     	;# 
+   211  0002                     	;# 
+   212  0003                     	;# 
+   213  0004                     	;# 
+   214  0005                     	;# 
+   215  0006                     	;# 
+   216  0007                     	;# 
+   217  0008                     	;# 
+   218  0009                     	;# 
+   219  000A                     	;# 
+   220  000B                     	;# 
+   221  000C                     	;# 
+   222  000D                     	;# 
+   223  000E                     	;# 
+   224  000E                     	;# 
+   225  000F                     	;# 
+   226  0010                     	;# 
+   227  0011                     	;# 
+   228  0012                     	;# 
+   229  0013                     	;# 
+   230  0014                     	;# 
+   231  0015                     	;# 
+   232  0015                     	;# 
+   233  0016                     	;# 
+   234  0017                     	;# 
+   235  0018                     	;# 
+   236  0019                     	;# 
+   237  001A                     	;# 
+   238  001B                     	;# 
+   239  001B                     	;# 
+   240  001C                     	;# 
+   241  001D                     	;# 
+   242  001E                     	;# 
+   243  001F                     	;# 
+   244  0081                     	;# 
+   245  0085                     	;# 
+   246  0086                     	;# 
+   247  0087                     	;# 
+   248  0088                     	;# 
+   249  0089                     	;# 
+   250  008C                     	;# 
+   251  008D                     	;# 
+   252  008E                     	;# 
+   253  008F                     	;# 
+   254  0090                     	;# 
+   255  0091                     	;# 
+   256  0092                     	;# 
+   257  0093                     	;# 
+   258  0093                     	;# 
+   259  0093                     	;# 
+   260  0094                     	;# 
+   261  0095                     	;# 
+   262  0096                     	;# 
+   263  0097                     	;# 
+   264  0098                     	;# 
+   265  0099                     	;# 
+   266  009A                     	;# 
+   267  009B                     	;# 
+   268  009C                     	;# 
+   269  009D                     	;# 
+   270  009E                     	;# 
+   271  009F                     	;# 
+   272  0105                     	;# 
+   273  0107                     	;# 
+   274  0108                     	;# 
+   275  0109                     	;# 
+   276  010C                     	;# 
+   277  010C                     	;# 
+   278  010D                     	;# 
+   279  010E                     	;# 
+   280  010F                     	;# 
+   281  0185                     	;# 
+   282  0187                     	;# 
+   283  0188                     	;# 
+   284  0189                     	;# 
+   285  018C                     	;# 
+   286  018D                     	;# 
+   287  0019                     _TXREG	set	25
+   288  0018                     _RCSTAbits	set	24
+   289  0014                     _SSPCONbits	set	20
+   290  000E                     _TMR1L	set	14
+   291  000F                     _TMR1H	set	15
+   292  0010                     _T1CONbits	set	16
+   293  0001                     _TMR0	set	1
+   294  001F                     _ADCON0bits	set	31
+   295  0006                     _PORTB	set	6
+   296  0007                     _PORTC	set	7
+   297  0005                     _PORTA	set	5
+   298  0008                     _PORTD	set	8
+   299  0013                     _SSPBUF	set	19
+   300  000C                     _PIR1bits	set	12
+   301  0006                     _PORTBbits	set	6
+   302  000B                     _INTCONbits	set	11
+   303  0099                     _SPBRG	set	153
+   304  0098                     _TXSTAbits	set	152
+   305  0087                     _TRISCbits	set	135
+   306  0096                     _IOCBbits	set	150
+   307  008F                     _OSCCONbits	set	143
+   308  009F                     _ADCON1bits	set	159
+   309  0089                     _TRISEbits	set	137
+   310  0085                     _TRISAbits	set	133
+   311  008C                     _PIE1bits	set	140
+   312  0095                     _WPUBbits	set	149
+   313  0081                     _OPTION_REGbits	set	129
+   314  0088                     _TRISD	set	136
+   315  0087                     _TRISC	set	135
+   316  0086                     _TRISBbits	set	134
+   317  0086                     _TRISB	set	134
+   318  0085                     _TRISA	set	133
+   319  0094                     _SSPSTATbits	set	148
+   320  0187                     _BAUDCTLbits	set	391
+   321  0189                     _ANSELHbits	set	393
+   322  0188                     _ANSELbits	set	392
+   323  0189                     _ANSELH	set	393
+   324  0188                     _ANSEL	set	392
+   325                           
+   326                           	psect	cinit
+   327  000F                     start_initialization:	
+   328                           ; #config settings
+   329                           
+   330  000F                     __initialization:
+   331                           
+   332                           ; Clear objects allocated to COMMON
+   333  000F  01F6               	clrf	__pbssCOMMON& (0+127)
+   334  0010                     end_of_initialization:	
+   335                           ;End of C runtime variable initialization code
+   336                           
+   337  0010                     __end_of__initialization:
+   338  0010  0183               	clrf	3
+   339  0011  120A  118A  28EA   	ljmp	_main	;jump to C main() function
+   340                           
+   341                           	psect	bssCOMMON
+   342  0076                     __pbssCOMMON:
+   343  0076                     _cont:
+   344  0076                     	ds	1
+   345                           
+   346                           	psect	cstackCOMMON
+   347  0070                     __pcstackCOMMON:
+   348  0070                     ?_configuracion:
+   349  0070                     ?_IOCBpinEnable:	
+   350                           ; 1 bytes @ 0x0
+   351                           
+   352  0070                     ?_initSPI_multiesclavo:	
+   353                           ; 1 bytes @ 0x0
+   354                           
+   355  0070                     ?_IOCBenableInterrupt:	
+   356                           ; 1 bytes @ 0x0
+   357                           
+   358  0070                     ?_SPIenableRInterrupt:	
+   359                           ; 1 bytes @ 0x0
+   360                           
+   361  0070                     ?_isr:	
+   362                           ; 1 bytes @ 0x0
+   363                           
+   364  0070                     ??_isr:	
+   365                           ; 1 bytes @ 0x0
+   366                           
+   367  0070                     ?_main:	
+   368                           ; 1 bytes @ 0x0
+   369                           
+   370                           
+   371                           ; 1 bytes @ 0x0
+   372  0070                     	ds	3
+   373  0073                     ?_setupOsc:
+   374  0073                     ??_IOCBpinEnable:	
+   375                           ; 1 bytes @ 0x3
+   376                           
+   377  0073                     ??_initSPI_multiesclavo:	
+   378                           ; 1 bytes @ 0x3
+   379                           
+   380  0073                     ??_IOCBenableInterrupt:	
+   381                           ; 1 bytes @ 0x3
+   382                           
+   383  0073                     ??_SPIenableRInterrupt:	
+   384                           ; 1 bytes @ 0x3
+   385                           
+   386  0073                     setupOsc@clkSrc:	
+   387                           ; 1 bytes @ 0x3
+   388                           
+   389                           
+   390                           ; 1 bytes @ 0x3
+   391  0073                     	ds	1
+   392  0074                     ??_setupOsc:
+   393                           
+   394                           ; 1 bytes @ 0x4
+   395  0074                     	ds	1
+   396  0075                     setupOsc@freq:
+   397  0075                     IOCBpinEnable@pin:	
+   398                           ; 1 bytes @ 0x5
+   399                           
+   400                           
+   401                           ; 1 bytes @ 0x5
+   402  0075                     	ds	1
+   403  0076                     ??_configuracion:
+   404  0076                     ??_main:	
+   405                           ; 1 bytes @ 0x6
+   406                           
+   407                           
+   408                           	psect	maintext
+   409  00EA                     __pmaintext:	
+   410                           ; 1 bytes @ 0x6
+   411 ;;
+   412 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   413 ;;
+   414 ;; *************** function _main *****************
+   415 ;; Defined at:
+   416 ;;		line 64 in file "C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c"
+   417 ;; Parameters:    Size  Location     Type
+   418 ;;		None
+   419 ;; Auto vars:     Size  Location     Type
+   420 ;;		None
+   421 ;; Return value:  Size  Location     Type
+   422 ;;                  1    wreg      void 
+   423 ;; Registers used:
+   424 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   425 ;; Tracked objects:
+   426 ;;		On entry : B00/0
+   427 ;;		On exit  : 0/0
+   428 ;;		Unchanged: 0/0
+   429 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   430 ;;      Params:         0       0       0       0       0
+   431 ;;      Locals:         0       0       0       0       0
+   432 ;;      Temps:          0       0       0       0       0
+   433 ;;      Totals:         0       0       0       0       0
+   434 ;;Total ram usage:        0 bytes
+   435 ;; Hardware stack levels required when called: 3
+   436 ;; This function calls:
+   437 ;;		_configuracion
+   438 ;; This function is called by:
+   439 ;;		Startup code after reset
+   440 ;; This function uses a non-reentrant model
+   441 ;;
+   442                           
+   443                           
+   444                           ;psect for function _main
+   445  00EA                     _main:
+   446  00EA                     l1125:	
+   447                           ;incstack = 0
+   448                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   449                           
+   450                           
+   451                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 65:    
+      +                           configuracion();
+   452  00EA  120A  118A  2059  120A  118A  	fcall	_configuracion
+   453  00EF                     l1127:
+   454                           
+   455                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 67:    
+      +                               PORTD=cont;
+   456  00EF  0876               	movf	_cont,w
+   457  00F0  1283               	bcf	3,5	;RP0=0, select bank0
+   458  00F1  1303               	bcf	3,6	;RP1=0, select bank0
+   459  00F2  0088               	movwf	8	;volatile
+   460  00F3  28EF               	goto	l1127
+   461  00F4  120A  118A  280C   	ljmp	start
+   462  00F7                     __end_of_main:
+   463                           
+   464                           	psect	text1
+   465  0059                     __ptext1:	
+   466 ;; *************** function _configuracion *****************
+   467 ;; Defined at:
+   468 ;;		line 73 in file "C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c"
+   469 ;; Parameters:    Size  Location     Type
+   470 ;;		None
+   471 ;; Auto vars:     Size  Location     Type
+   472 ;;		None
+   473 ;; Return value:  Size  Location     Type
+   474 ;;                  1    wreg      void 
+   475 ;; Registers used:
+   476 ;;		wreg, fsr0l, fsr0h, status,2, status,0, pclath, cstack
+   477 ;; Tracked objects:
+   478 ;;		On entry : 0/0
+   479 ;;		On exit  : 0/0
+   480 ;;		Unchanged: 0/0
+   481 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   482 ;;      Params:         0       0       0       0       0
+   483 ;;      Locals:         0       0       0       0       0
+   484 ;;      Temps:          0       0       0       0       0
+   485 ;;      Totals:         0       0       0       0       0
+   486 ;;Total ram usage:        0 bytes
+   487 ;; Hardware stack levels used: 1
+   488 ;; Hardware stack levels required when called: 2
+   489 ;; This function calls:
+   490 ;;		_IOCBenableInterrupt
+   491 ;;		_IOCBpinEnable
+   492 ;;		_SPIenableRInterrupt
+   493 ;;		_initSPI_multiesclavo
+   494 ;;		_setupOsc
+   495 ;; This function is called by:
+   496 ;;		_main
+   497 ;; This function uses a non-reentrant model
+   498 ;;
+   499                           
+   500                           
+   501                           ;psect for function _configuracion
+   502  0059                     _configuracion:
+   503  0059                     l1093:	
+   504                           ;incstack = 0
+   505                           ; Regs used in _configuracion: [wreg-fsr0h+status,2+status,0+pclath+cstack]
+   506                           
+   507                           
+   508                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 76:    
+      +                           ANSEL=0;
+   509  0059  1683               	bsf	3,5	;RP0=1, select bank3
+   510  005A  1703               	bsf	3,6	;RP1=1, select bank3
+   511  005B  0188               	clrf	8	;volatile
+   512                           
+   513                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 77:    
+      +                           ANSELH=0;
+   514  005C  0189               	clrf	9	;volatile
+   515                           
+   516                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 79:    
+      +                           TRISA=0;
+   517  005D  1683               	bsf	3,5	;RP0=1, select bank1
+   518  005E  1303               	bcf	3,6	;RP1=0, select bank1
+   519  005F  0185               	clrf	5	;volatile
+   520                           
+   521                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 80:    
+      +                           TRISB=0;
+   522  0060  0186               	clrf	6	;volatile
+   523  0061                     l1095:
+   524                           
+   525                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 81:    
+      +                           TRISBbits.TRISB0=1;
+   526  0061  1406               	bsf	6,0	;volatile
+   527  0062                     l1097:
+   528                           
+   529                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 82:    
+      +                           TRISBbits.TRISB3=1;
+   530  0062  1586               	bsf	6,3	;volatile
+   531                           
+   532                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 83:    
+      +                           TRISC=0;
+   533  0063  0187               	clrf	7	;volatile
+   534                           
+   535                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 84:    
+      +                           TRISD=0;
+   536  0064  0188               	clrf	8	;volatile
+   537                           
+   538                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 86:    
+      +                           PORTA=0;
+   539  0065  1283               	bcf	3,5	;RP0=0, select bank0
+   540  0066  1303               	bcf	3,6	;RP1=0, select bank0
+   541  0067  0185               	clrf	5	;volatile
+   542                           
+   543                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 87:    
+      +                           PORTC=0;
+   544  0068  0187               	clrf	7	;volatile
+   545                           
+   546                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 88:    
+      +                           PORTD=0;
+   547  0069  0188               	clrf	8	;volatile
+   548                           
+   549                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 89:    
+      +                           PORTB=0;
+   550  006A  0186               	clrf	6	;volatile
+   551  006B                     l1099:
+   552                           
+   553                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 91:    
+      +                           OPTION_REGbits.nRBPU=0;
+   554  006B  1683               	bsf	3,5	;RP0=1, select bank1
+   555  006C  1303               	bcf	3,6	;RP1=0, select bank1
+   556  006D  1381               	bcf	1,7	;volatile
+   557  006E                     l1101:
+   558                           
+   559                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 92:    
+      +                           WPUBbits.WPUB0=1;
+   560  006E  1415               	bsf	21,0	;volatile
+   561  006F                     l1103:
+   562                           
+   563                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 93:    
+      +                           WPUBbits.WPUB3=1;
+   564  006F  1595               	bsf	21,3	;volatile
+   565  0070                     l1105:
+   566                           
+   567                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 97:    
+      +                           setupOsc(0b100,1);
+   568  0070  01F3               	clrf	setupOsc@clkSrc
+   569  0071  0AF3               	incf	setupOsc@clkSrc,f
+   570  0072  3004               	movlw	4
+   571  0073  120A  118A  20D9  120A  118A  	fcall	_setupOsc
+   572  0078                     l1107:
+   573                           
+   574                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 101:   
+      +                            IOCBpinEnable(0);
+   575  0078  3000               	movlw	0
+   576  0079  120A  118A  2014  120A  118A  	fcall	_IOCBpinEnable
+   577  007E                     l1109:
+   578                           
+   579                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 102:   
+      +                            IOCBpinEnable(3);
+   580  007E  3003               	movlw	3
+   581  007F  120A  118A  2014  120A  118A  	fcall	_IOCBpinEnable
+   582  0084                     l1111:
+   583                           
+   584                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 103:   
+      +                            INTCONbits.RBIF=0;
+   585  0084  100B               	bcf	11,0	;volatile
+   586  0085                     l1113:
+   587                           
+   588                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 107:   
+      +                            initSPI_multiesclavo();
+   589  0085  120A  118A  20C2  120A  118A  	fcall	_initSPI_multiesclavo
+   590  008A                     l1115:
+   591                           
+   592                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 111:   
+      +                            INTCONbits.GIE=1;
+   593  008A  178B               	bsf	11,7	;volatile
+   594  008B                     l1117:
+   595                           
+   596                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 112:   
+      +                            INTCONbits.PEIE=1;
+   597  008B  170B               	bsf	11,6	;volatile
+   598  008C                     l1119:
+   599                           
+   600                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 114:   
+      +                            IOCBenableInterrupt();
+   601  008C  120A  118A  20FE  120A  118A  	fcall	_IOCBenableInterrupt
+   602  0091                     l1121:
+   603                           
+   604                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 115:   
+      +                            SPIenableRInterrupt();
+   605  0091  120A  118A  20F7  120A  118A  	fcall	_SPIenableRInterrupt
+   606                           
+   607                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 119:   
+      +                            cont=0;
+   608  0096  01F6               	clrf	_cont
+   609  0097                     l70:
+   610  0097  0008               	return
+   611  0098                     __end_of_configuracion:
+   612                           
+   613                           	psect	text2
+   614  00D9                     __ptext2:	
+   615 ;; *************** function _setupOsc *****************
+   616 ;; Defined at:
+   617 ;;		line 112 in file "C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c"
+   618 ;; Parameters:    Size  Location     Type
+   619 ;;  freq            1    wreg     unsigned char 
+   620 ;;  clkSrc          1    3[COMMON] unsigned char 
+   621 ;; Auto vars:     Size  Location     Type
+   622 ;;  freq            1    5[COMMON] unsigned char 
+   623 ;; Return value:  Size  Location     Type
+   624 ;;                  1    wreg      void 
+   625 ;; Registers used:
+   626 ;;		wreg, status,2, status,0
+   627 ;; Tracked objects:
+   628 ;;		On entry : 0/0
+   629 ;;		On exit  : 0/0
+   630 ;;		Unchanged: 0/0
+   631 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   632 ;;      Params:         1       0       0       0       0
+   633 ;;      Locals:         1       0       0       0       0
+   634 ;;      Temps:          1       0       0       0       0
+   635 ;;      Totals:         3       0       0       0       0
+   636 ;;Total ram usage:        3 bytes
+   637 ;; Hardware stack levels used: 1
+   638 ;; Hardware stack levels required when called: 1
+   639 ;; This function calls:
+   640 ;;		Nothing
+   641 ;; This function is called by:
+   642 ;;		_configuracion
+   643 ;; This function uses a non-reentrant model
+   644 ;;
+   645                           
+   646                           
+   647                           ;psect for function _setupOsc
+   648  00D9                     _setupOsc:
+   649                           
+   650                           ;incstack = 0
+   651                           ; Regs used in _setupOsc: [wreg+status,2+status,0]
+   652                           ;setupOsc@freq stored from wreg
+   653  00D9  00F5               	movwf	setupOsc@freq
+   654  00DA                     l1087:
+   655                           
+   656                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 113:     OSCCONbits.SCS=clkSrc;
+   657  00DA  0C73               	rrf	setupOsc@clkSrc,w
+   658  00DB  1683               	bsf	3,5	;RP0=1, select bank1
+   659  00DC  1303               	bcf	3,6	;RP1=0, select bank1
+   660  00DD  1C03               	skipc
+   661  00DE  100F               	bcf	15,0	;volatile
+   662  00DF  1803               	skipnc
+   663  00E0  140F               	bsf	15,0	;volatile
+   664  00E1                     l1089:
+   665                           
+   666                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 114:     OSCCONbits.IRCF=freq;
+   667  00E1  0875               	movf	setupOsc@freq,w
+   668  00E2  00F4               	movwf	??_setupOsc
+   669  00E3  0EF4               	swapf	??_setupOsc,f
+   670  00E4  080F               	movf	15,w	;volatile
+   671  00E5  0674               	xorwf	??_setupOsc,w
+   672  00E6  398F               	andlw	-113
+   673  00E7  0674               	xorwf	??_setupOsc,w
+   674  00E8  008F               	movwf	15	;volatile
+   675  00E9                     l161:
+   676  00E9  0008               	return
+   677  00EA                     __end_of_setupOsc:
+   678                           
+   679                           	psect	text3
+   680  00C2                     __ptext3:	
+   681 ;; *************** function _initSPI_multiesclavo *****************
+   682 ;; Defined at:
+   683 ;;		line 234 in file "C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c"
+   684 ;; Parameters:    Size  Location     Type
+   685 ;;		None
+   686 ;; Auto vars:     Size  Location     Type
+   687 ;;		None
+   688 ;; Return value:  Size  Location     Type
+   689 ;;                  1    wreg      void 
+   690 ;; Registers used:
+   691 ;;		wreg, status,2, status,0
+   692 ;; Tracked objects:
+   693 ;;		On entry : 0/0
+   694 ;;		On exit  : 0/0
+   695 ;;		Unchanged: 0/0
+   696 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   697 ;;      Params:         0       0       0       0       0
+   698 ;;      Locals:         0       0       0       0       0
+   699 ;;      Temps:          0       0       0       0       0
+   700 ;;      Totals:         0       0       0       0       0
+   701 ;;Total ram usage:        0 bytes
+   702 ;; Hardware stack levels used: 1
+   703 ;; Hardware stack levels required when called: 1
+   704 ;; This function calls:
+   705 ;;		Nothing
+   706 ;; This function is called by:
+   707 ;;		_configuracion
+   708 ;; This function uses a non-reentrant model
+   709 ;;
+   710                           
+   711                           
+   712                           ;psect for function _initSPI_multiesclavo
+   713  00C2                     _initSPI_multiesclavo:
+   714  00C2                     l855:	
+   715                           ;incstack = 0
+   716                           ; Regs used in _initSPI_multiesclavo: [wreg+status,2+status,0]
+   717                           
+   718                           
+   719                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 236:     SSPCONbits.SSPEN=0;
+   720  00C2  1283               	bcf	3,5	;RP0=0, select bank0
+   721  00C3  1303               	bcf	3,6	;RP1=0, select bank0
+   722  00C4  1294               	bcf	20,5	;volatile
+   723                           
+   724                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 238:     SSPCONbits.CKP=0;
+   725  00C5  1214               	bcf	20,4	;volatile
+   726                           
+   727                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 239:     SSPSTATbits.CKE=0;
+   728  00C6  1683               	bsf	3,5	;RP0=1, select bank1
+   729  00C7  1303               	bcf	3,6	;RP1=0, select bank1
+   730  00C8  1314               	bcf	20,6	;volatile
+   731  00C9                     l857:
+   732                           
+   733                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 241:     SSPCONbits.SSPM=0b0100;
+   734  00C9  1283               	bcf	3,5	;RP0=0, select bank0
+   735  00CA  1303               	bcf	3,6	;RP1=0, select bank0
+   736  00CB  0814               	movf	20,w	;volatile
+   737  00CC  39F0               	andlw	-16
+   738  00CD  3804               	iorlw	4
+   739  00CE  0094               	movwf	20	;volatile
+   740  00CF                     l859:
+   741                           
+   742                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 243:     TRISCbits.TRISC4=1;
+   743  00CF  1683               	bsf	3,5	;RP0=1, select bank1
+   744  00D0  1303               	bcf	3,6	;RP1=0, select bank1
+   745  00D1  1607               	bsf	7,4	;volatile
+   746  00D2                     l861:
+   747                           
+   748                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 244:     TRISCbits.TRISC5=0;
+   749  00D2  1287               	bcf	7,5	;volatile
+   750  00D3                     l863:
+   751                           
+   752                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 245:     TRISCbits.TRISC3=1;
+   753  00D3  1587               	bsf	7,3	;volatile
+   754  00D4                     l865:
+   755                           
+   756                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 246:     TRISAbits.TRISA5=1;
+   757  00D4  1685               	bsf	5,5	;volatile
+   758  00D5                     l867:
+   759                           
+   760                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 248:     SSPCONbits.SSPEN=1;
+   761  00D5  1283               	bcf	3,5	;RP0=0, select bank0
+   762  00D6  1303               	bcf	3,6	;RP1=0, select bank0
+   763  00D7  1694               	bsf	20,5	;volatile
+   764  00D8                     l205:
+   765  00D8  0008               	return
+   766  00D9                     __end_of_initSPI_multiesclavo:
+   767                           
+   768                           	psect	text4
+   769  00F7                     __ptext4:	
+   770 ;; *************** function _SPIenableRInterrupt *****************
+   771 ;; Defined at:
+   772 ;;		line 251 in file "C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c"
+   773 ;; Parameters:    Size  Location     Type
+   774 ;;		None
+   775 ;; Auto vars:     Size  Location     Type
+   776 ;;		None
+   777 ;; Return value:  Size  Location     Type
+   778 ;;                  1    wreg      void 
+   779 ;; Registers used:
+   780 ;;		None
+   781 ;; Tracked objects:
+   782 ;;		On entry : 0/0
+   783 ;;		On exit  : 0/0
+   784 ;;		Unchanged: 0/0
+   785 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   786 ;;      Params:         0       0       0       0       0
+   787 ;;      Locals:         0       0       0       0       0
+   788 ;;      Temps:          0       0       0       0       0
+   789 ;;      Totals:         0       0       0       0       0
+   790 ;;Total ram usage:        0 bytes
+   791 ;; Hardware stack levels used: 1
+   792 ;; Hardware stack levels required when called: 1
+   793 ;; This function calls:
+   794 ;;		Nothing
+   795 ;; This function is called by:
+   796 ;;		_configuracion
+   797 ;; This function uses a non-reentrant model
+   798 ;;
+   799                           
+   800                           
+   801                           ;psect for function _SPIenableRInterrupt
+   802  00F7                     _SPIenableRInterrupt:
+   803  00F7                     l871:	
+   804                           ;incstack = 0
+   805                           ; Regs used in _SPIenableRInterrupt: []
+   806                           
+   807                           
+   808                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 252:     PIE1bits.SSPIE=1;
+   809  00F7  1683               	bsf	3,5	;RP0=1, select bank1
+   810  00F8  1303               	bcf	3,6	;RP1=0, select bank1
+   811  00F9  158C               	bsf	12,3	;volatile
+   812                           
+   813                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 253:     PIR1bits.SSPIF=0;
+   814  00FA  1283               	bcf	3,5	;RP0=0, select bank0
+   815  00FB  1303               	bcf	3,6	;RP1=0, select bank0
+   816  00FC  118C               	bcf	12,3	;volatile
+   817  00FD                     l208:
+   818  00FD  0008               	return
+   819  00FE                     __end_of_SPIenableRInterrupt:
+   820                           
+   821                           	psect	text5
+   822  0014                     __ptext5:	
+   823 ;; *************** function _IOCBpinEnable *****************
+   824 ;; Defined at:
+   825 ;;		line 125 in file "C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c"
+   826 ;; Parameters:    Size  Location     Type
+   827 ;;  pin             1    wreg     unsigned char 
+   828 ;; Auto vars:     Size  Location     Type
+   829 ;;  pin             1    5[COMMON] unsigned char 
+   830 ;; Return value:  Size  Location     Type
+   831 ;;                  1    wreg      void 
+   832 ;; Registers used:
+   833 ;;		wreg, fsr0l, fsr0h, status,2, status,0
+   834 ;; Tracked objects:
+   835 ;;		On entry : 0/0
+   836 ;;		On exit  : 0/0
+   837 ;;		Unchanged: 0/0
+   838 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+   839 ;;      Params:         0       0       0       0       0
+   840 ;;      Locals:         1       0       0       0       0
+   841 ;;      Temps:          2       0       0       0       0
+   842 ;;      Totals:         3       0       0       0       0
+   843 ;;Total ram usage:        3 bytes
+   844 ;; Hardware stack levels used: 1
+   845 ;; Hardware stack levels required when called: 1
+   846 ;; This function calls:
+   847 ;;		Nothing
+   848 ;; This function is called by:
+   849 ;;		_configuracion
+   850 ;; This function uses a non-reentrant model
+   851 ;;
+   852                           
+   853                           
+   854                           ;psect for function _IOCBpinEnable
+   855  0014                     _IOCBpinEnable:
+   856                           
+   857                           ;incstack = 0
+   858                           ; Regs used in _IOCBpinEnable: [wreg-fsr0h+status,2+status,0]
+   859                           ;IOCBpinEnable@pin stored from wreg
+   860  0014  00F5               	movwf	IOCBpinEnable@pin
+   861  0015                     l845:
+   862                           
+   863                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 126:     switch(pin){
+   864  0015  2836               	goto	l849
+   865  0016                     l168:	
+   866                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 127:         case 0:
+   867                           
+   868                           
+   869                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 128:             IOCBbits.IOCB0=1;
+   870  0016  1683               	bsf	3,5	;RP0=1, select bank1
+   871  0017  1303               	bcf	3,6	;RP1=0, select bank1
+   872  0018  1416               	bsf	22,0	;volatile
+   873                           
+   874                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 129:             break;
+   875  0019  2858               	goto	l178
+   876  001A                     l170:	
+   877                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 130:         case 1:
+   878                           
+   879                           
+   880                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 131:             IOCBbits.IOCB1=1;
+   881  001A  1683               	bsf	3,5	;RP0=1, select bank1
+   882  001B  1303               	bcf	3,6	;RP1=0, select bank1
+   883  001C  1496               	bsf	22,1	;volatile
+   884                           
+   885                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 132:             break;
+   886  001D  2858               	goto	l178
+   887  001E                     l171:	
+   888                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 133:         case 2:
+   889                           
+   890                           
+   891                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 134:             IOCBbits.IOCB2=1;
+   892  001E  1683               	bsf	3,5	;RP0=1, select bank1
+   893  001F  1303               	bcf	3,6	;RP1=0, select bank1
+   894  0020  1516               	bsf	22,2	;volatile
+   895                           
+   896                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 135:             break;
+   897  0021  2858               	goto	l178
+   898  0022                     l172:	
+   899                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 136:         case 3:
+   900                           
+   901                           
+   902                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 137:             IOCBbits.IOCB3=1;
+   903  0022  1683               	bsf	3,5	;RP0=1, select bank1
+   904  0023  1303               	bcf	3,6	;RP1=0, select bank1
+   905  0024  1596               	bsf	22,3	;volatile
+   906                           
+   907                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 138:             break;
+   908  0025  2858               	goto	l178
+   909  0026                     l173:	
+   910                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 139:         case 4:
+   911                           
+   912                           
+   913                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 140:             IOCBbits.IOCB4=1;
+   914  0026  1683               	bsf	3,5	;RP0=1, select bank1
+   915  0027  1303               	bcf	3,6	;RP1=0, select bank1
+   916  0028  1616               	bsf	22,4	;volatile
+   917                           
+   918                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 141:             break;
+   919  0029  2858               	goto	l178
+   920  002A                     l174:	
+   921                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 142:         case 5:
+   922                           
+   923                           
+   924                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 143:             IOCBbits.IOCB5=1;
+   925  002A  1683               	bsf	3,5	;RP0=1, select bank1
+   926  002B  1303               	bcf	3,6	;RP1=0, select bank1
+   927  002C  1696               	bsf	22,5	;volatile
+   928                           
+   929                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 144:             break;
+   930  002D  2858               	goto	l178
+   931  002E                     l175:	
+   932                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 145:         case 6:
+   933                           
+   934                           
+   935                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 146:             IOCBbits.IOCB6=1;
+   936  002E  1683               	bsf	3,5	;RP0=1, select bank1
+   937  002F  1303               	bcf	3,6	;RP1=0, select bank1
+   938  0030  1716               	bsf	22,6	;volatile
+   939                           
+   940                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 147:             break;
+   941  0031  2858               	goto	l178
+   942  0032                     l176:	
+   943                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 148:         case 7:
+   944                           
+   945                           
+   946                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 149:             IOCBbits.IOCB7=1;
+   947  0032  1683               	bsf	3,5	;RP0=1, select bank1
+   948  0033  1303               	bcf	3,6	;RP1=0, select bank1
+   949  0034  1796               	bsf	22,7	;volatile
+   950                           
+   951                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 150:             break;
+   952  0035  2858               	goto	l178
+   953  0036                     l849:
+   954  0036  0875               	movf	IOCBpinEnable@pin,w
+   955  0037  00F3               	movwf	??_IOCBpinEnable
+   956  0038  01F4               	clrf	??_IOCBpinEnable+1
+   957                           
+   958                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+   959                           ; Switch size 1, requested type "simple"
+   960                           ; Number of cases is 1, Range of values is 0 to 0
+   961                           ; switch strategies available:
+   962                           ; Name         Instructions Cycles
+   963                           ; simple_byte            4     3 (average)
+   964                           ; direct_byte           11     8 (fixed)
+   965                           ; jumptable            260     6 (fixed)
+   966                           ;	Chosen strategy is simple_byte
+   967  0039  0874               	movf	??_IOCBpinEnable+1,w
+   968  003A  3A00               	xorlw	0	; case 0
+   969  003B  1903               	skipnz
+   970  003C  283E               	goto	l1149
+   971  003D  2858               	goto	l178
+   972  003E                     l1149:
+   973                           
+   974                           ; Switch size 1, requested type "simple"
+   975                           ; Number of cases is 8, Range of values is 0 to 7
+   976                           ; switch strategies available:
+   977                           ; Name         Instructions Cycles
+   978                           ; simple_byte           25    13 (average)
+   979                           ; direct_byte           32     8 (fixed)
+   980                           ; jumptable            260     6 (fixed)
+   981                           ;	Chosen strategy is simple_byte
+   982  003E  0873               	movf	??_IOCBpinEnable,w
+   983  003F  3A00               	xorlw	0	; case 0
+   984  0040  1903               	skipnz
+   985  0041  2816               	goto	l168
+   986  0042  3A01               	xorlw	1	; case 1
+   987  0043  1903               	skipnz
+   988  0044  281A               	goto	l170
+   989  0045  3A03               	xorlw	3	; case 2
+   990  0046  1903               	skipnz
+   991  0047  281E               	goto	l171
+   992  0048  3A01               	xorlw	1	; case 3
+   993  0049  1903               	skipnz
+   994  004A  2822               	goto	l172
+   995  004B  3A07               	xorlw	7	; case 4
+   996  004C  1903               	skipnz
+   997  004D  2826               	goto	l173
+   998  004E  3A01               	xorlw	1	; case 5
+   999  004F  1903               	skipnz
+  1000  0050  282A               	goto	l174
+  1001  0051  3A03               	xorlw	3	; case 6
+  1002  0052  1903               	skipnz
+  1003  0053  282E               	goto	l175
+  1004  0054  3A01               	xorlw	1	; case 7
+  1005  0055  1903               	skipnz
+  1006  0056  2832               	goto	l176
+  1007  0057  2858               	goto	l178
+  1008  0058                     l178:
+  1009  0058  0008               	return
+  1010  0059                     __end_of_IOCBpinEnable:
+  1011                           
+  1012                           	psect	text6
+  1013  00FE                     __ptext6:	
+  1014 ;; *************** function _IOCBenableInterrupt *****************
+  1015 ;; Defined at:
+  1016 ;;		line 120 in file "C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c"
+  1017 ;; Parameters:    Size  Location     Type
+  1018 ;;		None
+  1019 ;; Auto vars:     Size  Location     Type
+  1020 ;;		None
+  1021 ;; Return value:  Size  Location     Type
+  1022 ;;                  1    wreg      void 
+  1023 ;; Registers used:
+  1024 ;;		None
+  1025 ;; Tracked objects:
+  1026 ;;		On entry : 0/0
+  1027 ;;		On exit  : 0/0
+  1028 ;;		Unchanged: 0/0
+  1029 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1030 ;;      Params:         0       0       0       0       0
+  1031 ;;      Locals:         0       0       0       0       0
+  1032 ;;      Temps:          0       0       0       0       0
+  1033 ;;      Totals:         0       0       0       0       0
+  1034 ;;Total ram usage:        0 bytes
+  1035 ;; Hardware stack levels used: 1
+  1036 ;; Hardware stack levels required when called: 1
+  1037 ;; This function calls:
+  1038 ;;		Nothing
+  1039 ;; This function is called by:
+  1040 ;;		_configuracion
+  1041 ;; This function uses a non-reentrant model
+  1042 ;;
+  1043                           
+  1044                           
+  1045                           ;psect for function _IOCBenableInterrupt
+  1046  00FE                     _IOCBenableInterrupt:
+  1047  00FE                     l869:	
+  1048                           ;incstack = 0
+  1049                           ; Regs used in _IOCBenableInterrupt: []
+  1050                           
+  1051                           
+  1052                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 121:     INTCONbits.RBIE=1;
+  1053  00FE  158B               	bsf	11,3	;volatile
+  1054                           
+  1055                           ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16
+      +                          F887.c: 122:     INTCONbits.RBIF=0;
+  1056  00FF  100B               	bcf	11,0	;volatile
+  1057  0100                     l164:
+  1058  0100  0008               	return
+  1059  0101                     __end_of_IOCBenableInterrupt:
+  1060                           
+  1061                           	psect	text7
+  1062  0098                     __ptext7:	
+  1063 ;; *************** function _isr *****************
+  1064 ;; Defined at:
+  1065 ;;		line 45 in file "C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c"
+  1066 ;; Parameters:    Size  Location     Type
+  1067 ;;		None
+  1068 ;; Auto vars:     Size  Location     Type
+  1069 ;;		None
+  1070 ;; Return value:  Size  Location     Type
+  1071 ;;                  1    wreg      void 
+  1072 ;; Registers used:
+  1073 ;;		wreg, status,2, status,0
+  1074 ;; Tracked objects:
+  1075 ;;		On entry : 0/0
+  1076 ;;		On exit  : 0/0
+  1077 ;;		Unchanged: 0/0
+  1078 ;; Data sizes:     COMMON   BANK0   BANK1   BANK3   BANK2
+  1079 ;;      Params:         0       0       0       0       0
+  1080 ;;      Locals:         0       0       0       0       0
+  1081 ;;      Temps:          3       0       0       0       0
+  1082 ;;      Totals:         3       0       0       0       0
+  1083 ;;Total ram usage:        3 bytes
+  1084 ;; Hardware stack levels used: 1
+  1085 ;; This function calls:
+  1086 ;;		Nothing
+  1087 ;; This function is called by:
+  1088 ;;		Interrupt level 1
+  1089 ;; This function uses a non-reentrant model
+  1090 ;;
+  1091                           
+  1092                           
+  1093                           ;psect for function _isr
+  1094  0098                     _isr:
+  1095  0098                     i1l911:
+  1096                           
+  1097                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 46:    
+      +                           if(INTCONbits.RBIF){
+  1098  0098  1C0B               	btfss	11,0	;volatile
+  1099  0099  289B               	goto	u3_21
+  1100  009A  289C               	goto	u3_20
+  1101  009B                     u3_21:
+  1102  009B  28AD               	goto	i1l923
+  1103  009C                     u3_20:
+  1104  009C                     i1l913:
+  1105                           
+  1106                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 47:    
+      +                               if(!PORTBbits.RB0){
+  1107  009C  1283               	bcf	3,5	;RP0=0, select bank0
+  1108  009D  1303               	bcf	3,6	;RP1=0, select bank0
+  1109  009E  1806               	btfsc	6,0	;volatile
+  1110  009F  28A1               	goto	u4_21
+  1111  00A0  28A2               	goto	u4_20
+  1112  00A1                     u4_21:
+  1113  00A1  28A4               	goto	i1l917
+  1114  00A2                     u4_20:
+  1115  00A2                     i1l915:
+  1116                           
+  1117                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 48:    
+      +                                   cont--;
+  1118  00A2  3001               	movlw	1
+  1119  00A3  02F6               	subwf	_cont,f
+  1120  00A4                     i1l917:
+  1121                           
+  1122                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 50:    
+      +                               if(!PORTBbits.RB3){
+  1123  00A4  1986               	btfsc	6,3	;volatile
+  1124  00A5  28A7               	goto	u5_21
+  1125  00A6  28A8               	goto	u5_20
+  1126  00A7                     u5_21:
+  1127  00A7  28AC               	goto	i1l921
+  1128  00A8                     u5_20:
+  1129  00A8                     i1l919:
+  1130                           
+  1131                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 51:    
+      +                                   cont++;
+  1132  00A8  3001               	movlw	1
+  1133  00A9  00F0               	movwf	??_isr
+  1134  00AA  0870               	movf	??_isr,w
+  1135  00AB  07F6               	addwf	_cont,f
+  1136  00AC                     i1l921:
+  1137                           
+  1138                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 53:    
+      +                               INTCONbits.RBIF=0;
+  1139  00AC  100B               	bcf	11,0	;volatile
+  1140  00AD                     i1l923:
+  1141                           
+  1142                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 55:    
+      +                           if(PIR1bits.SSPIF){
+  1143  00AD  1283               	bcf	3,5	;RP0=0, select bank0
+  1144  00AE  1303               	bcf	3,6	;RP1=0, select bank0
+  1145  00AF  1D8C               	btfss	12,3	;volatile
+  1146  00B0  28B2               	goto	u6_21
+  1147  00B1  28B3               	goto	u6_20
+  1148  00B2                     u6_21:
+  1149  00B2  28BB               	goto	i1l59
+  1150  00B3                     u6_20:
+  1151  00B3                     i1l925:
+  1152                           
+  1153                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 56:    
+      +                               SSPSTATbits.BF=0;
+  1154  00B3  1683               	bsf	3,5	;RP0=1, select bank1
+  1155  00B4  1303               	bcf	3,6	;RP1=0, select bank1
+  1156  00B5  1014               	bcf	20,0	;volatile
+  1157  00B6                     i1l927:
+  1158                           
+  1159                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 57:    
+      +                               SSPBUF=cont;
+  1160  00B6  0876               	movf	_cont,w
+  1161  00B7  1283               	bcf	3,5	;RP0=0, select bank0
+  1162  00B8  1303               	bcf	3,6	;RP1=0, select bank0
+  1163  00B9  0093               	movwf	19	;volatile
+  1164  00BA                     i1l929:
+  1165                           
+  1166                           ;C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC3/PIC3P1.X/PIC3P1main.c: 58:    
+      +                               PIR1bits.SSPIF=0;
+  1167  00BA  118C               	bcf	12,3	;volatile
+  1168  00BB                     i1l59:
+  1169  00BB  0872               	movf	??_isr+2,w
+  1170  00BC  008A               	movwf	10
+  1171  00BD  0E71               	swapf	??_isr+1,w
+  1172  00BE  0083               	movwf	3
+  1173  00BF  0EFE               	swapf	btemp,f
+  1174  00C0  0E7E               	swapf	btemp,w
+  1175  00C1  0009               	retfie
+  1176  00C2                     __end_of_isr:
+  1177  007E                     btemp	set	126	;btemp
+  1178  007E                     wtemp0	set	126
+  1179                           
+  1180                           	psect	intentry
+  1181  0004                     __pintentry:	
+  1182                           ;incstack = 0
+  1183                           ; Regs used in _isr: [wreg+status,2+status,0]
+  1184                           
+  1185  0004                     interrupt_function:
+  1186  007E                     saved_w	set	btemp
+  1187  0004  00FE               	movwf	btemp
+  1188  0005  0E03               	swapf	3,w
+  1189  0006  00F1               	movwf	??_isr+1
+  1190  0007  080A               	movf	10,w
+  1191  0008  00F2               	movwf	??_isr+2
+  1192  0009  120A  118A  2898   	ljmp	_isr
+  1193                           
+  1194                           	psect	config
+  1195                           
+  1196                           ;Config register CONFIG1 @ 0x2007
+  1197                           ;	Oscillator Selection bits
+  1198                           ;	FOSC = INTRC_NOCLKOUT, INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O f
+      +                          unction on RA7/OSC1/CLKIN
+  1199                           ;	Watchdog Timer Enable bit
+  1200                           ;	WDTE = OFF, WDT disabled and can be enabled by SWDTEN bit of the WDTCON register
+  1201                           ;	Power-up Timer Enable bit
+  1202                           ;	PWRTE = OFF, PWRT disabled
+  1203                           ;	RE3/MCLR pin function select bit
+  1204                           ;	MCLRE = OFF, RE3/MCLR pin function is digital input, MCLR internally tied to VDD
+  1205                           ;	Code Protection bit
+  1206                           ;	CP = OFF, Program memory code protection is disabled
+  1207                           ;	Data Code Protection bit
+  1208                           ;	CPD = OFF, Data memory code protection is disabled
+  1209                           ;	Brown Out Reset Selection bits
+  1210                           ;	BOREN = OFF, BOR disabled
+  1211                           ;	Internal External Switchover bit
+  1212                           ;	IESO = OFF, Internal/External Switchover mode is disabled
+  1213                           ;	Fail-Safe Clock Monitor Enabled bit
+  1214                           ;	FCMEN = OFF, Fail-Safe Clock Monitor is disabled
+  1215                           ;	Low Voltage Programming Enable bit
+  1216                           ;	LVP = OFF, RB3 pin has digital I/O, HV on MCLR must be used for programming
+  1217                           ;	In-Circuit Debugger Mode bit
+  1218                           ;	DEBUG = 0x1, unprogrammed default
+  1219  2007                     	org	8199
+  1220  2007  20D4               	dw	8404
+  1221                           
+  1222                           ;Config register CONFIG2 @ 0x2008
+  1223                           ;	Brown-out Reset Selection bit
+  1224                           ;	BOR4V = BOR40V, Brown-out Reset set to 4.0V
+  1225                           ;	Flash Program Memory Self Write Enable bits
+  1226                           ;	WRT = OFF, Write protection off
+  1227  2008                     	org	8200
+  1228  2008  3FFF               	dw	16383
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         1
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      6       7
+    BANK0            80      0       0
+    BANK1            80      0       0
+    BANK3            96      0       0
+    BANK2            96      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    _configuracion->_IOCBpinEnable
+    _configuracion->_setupOsc
+
+Critical Paths under _isr in COMMON
+
+    None.
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _isr in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _isr in BANK1
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _isr in BANK3
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _isr in BANK2
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0     135
+                      _configuracion
+ ---------------------------------------------------------------------------------
+ (1) _configuracion                                        0     0      0     135
+                _IOCBenableInterrupt
+                      _IOCBpinEnable
+                _SPIenableRInterrupt
+               _initSPI_multiesclavo
+                           _setupOsc
+ ---------------------------------------------------------------------------------
+ (2) _setupOsc                                             3     2      1     120
+                                              3 COMMON     3     2      1
+ ---------------------------------------------------------------------------------
+ (2) _initSPI_multiesclavo                                 0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _SPIenableRInterrupt                                  0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _IOCBpinEnable                                        3     3      0      15
+                                              3 COMMON     3     3      0
+ ---------------------------------------------------------------------------------
+ (2) _IOCBenableInterrupt                                  0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (3) _isr                                                  3     3      0       0
+                                              0 COMMON     3     3      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 3
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _configuracion
+     _IOCBenableInterrupt
+     _IOCBpinEnable
+     _SPIenableRInterrupt
+     _initSPI_multiesclavo
+     _setupOsc
+
+ _isr (ROOT)
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMMON            E      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMMON               E      6       7       1       50.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+STACK                0      0       0       2        0.0%
+ABS                  0      0       7       3        0.0%
+BITBANK0            50      0       0       4        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+BANK0               50      0       0       5        0.0%
+BITSFR2              0      0       0       5        0.0%
+SFR2                 0      0       0       5        0.0%
+BITBANK1            50      0       0       6        0.0%
+BANK1               50      0       0       7        0.0%
+BITBANK3            60      0       0       8        0.0%
+BANK3               60      0       0       9        0.0%
+BITBANK2            60      0       0      10        0.0%
+BANK2               60      0       0      11        0.0%
+DATA                 0      0       7      12        0.0%
+
+
+Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
+Symbol Table                                                                                   Fri Feb 18 11:31:30 2022
+
+                  _SSPSTATbits 0094                             l70 0097                 ?_configuracion 0070  
+                 setupOsc@freq 0075                            l205 00D8                            l208 00FD  
+                          l161 00E9                            l170 001A                            l171 001E  
+                          l164 0100                            l172 0022                            l173 0026  
+                          l174 002A                            l175 002E                            l176 0032  
+                          l168 0016                            l178 0058                            l845 0015  
+                          l861 00D2                            l871 00F7                            l863 00D3  
+                          l855 00C2                            l849 0036                            l865 00D4  
+                          l857 00C9                            l867 00D5                            l859 00CF  
+                          l869 00FE                            _isr 0098                           l1101 006E  
+                         l1111 0084                           l1103 006F                           l1121 0091  
+                         l1113 0085                           l1105 0070                           l1115 008A  
+                         l1107 0078                           l1117 008B                           l1109 007E  
+                         l1125 00EA                           l1119 008C                           l1127 00EF  
+                         l1149 003E                           l1093 0059                           l1087 00DA  
+                         l1095 0061                           l1089 00E1                           l1097 0062  
+                         l1099 006B                           ?_isr 0070                           i1l59 00BB  
+                         _TMR0 0001                           u3_20 009C                           u3_21 009B  
+                         u4_20 00A2                           u4_21 00A1                           u5_20 00A8  
+                         u5_21 00A7                           u6_20 00B3                           u6_21 00B2  
+                         _cont 0076                           _main 00EA                           btemp 007E  
+                         start 000C           _initSPI_multiesclavo 00C2                 setupOsc@clkSrc 0073  
+                        ??_isr 0070                  _IOCBpinEnable 0014                          ?_main 0070  
+                        _ANSEL 0188                          i1l911 0098                          i1l921 00AC  
+                        i1l913 009C                          i1l915 00A2                          i1l923 00AD  
+                        i1l925 00B3                          i1l917 00A4                          i1l927 00B6  
+                        i1l919 00A8                          i1l929 00BA                          _TMR1H 000F  
+                        _TMR1L 000E                          _SPBRG 0099                          _PORTA 0005  
+                        _PORTB 0006                          _PORTC 0007                          _PORTD 0008  
+                        _TRISA 0085                          _TRISB 0086                          _TRISC 0087  
+                        _TRISD 0088                          _TXREG 0019                          pclath 000A  
+                        status 0003                          wtemp0 007E          ?_initSPI_multiesclavo 0070  
+              __initialization 000F                   __end_of_main 00F7                ??_configuracion 0076  
+               ?_IOCBpinEnable 0070                         ??_main 0076                         _ANSELH 0189  
+                       _SSPBUF 0013    __end_of_IOCBenableInterrupt 0101                         saved_w 007E  
+             __end_of_setupOsc 00EA        __end_of__initialization 0010         ??_initSPI_multiesclavo 0073  
+              ??_IOCBpinEnable 0073                 __pcstackCOMMON 0070                 _OPTION_REGbits 0081  
+                   __pmaintext 00EA   __size_of_SPIenableRInterrupt 0007                     __pintentry 0004  
+                    ?_setupOsc 0073                      _ANSELbits 0188                        __ptext1 0059  
+                      __ptext2 00D9                        __ptext3 00C2                        __ptext4 00F7  
+                      __ptext5 0014                        __ptext6 00FE                        __ptext7 0098  
+                    _T1CONbits 0010                   __size_of_isr 002A               IOCBpinEnable@pin 0075  
+         end_of_initialization 0010                      _RCSTAbits 0018                     ??_setupOsc 0074  
+        __end_of_configuracion 0098                      _PORTBbits 0006                      _TRISAbits 0085  
+                    _TRISBbits 0086                      _TRISCbits 0087                      _TRISEbits 0089  
+                    _TXSTAbits 0098                    _BAUDCTLbits 0187            start_initialization 000F  
+                  __end_of_isr 00C2            _SPIenableRInterrupt 00F7   __size_of_IOCBenableInterrupt 0003  
+__size_of_initSPI_multiesclavo 0017           ?_SPIenableRInterrupt 0070          __end_of_IOCBpinEnable 0059  
+                  __pbssCOMMON 0076                      ___latbits 0002          ??_SPIenableRInterrupt 0073  
+            __size_of_setupOsc 0011              interrupt_function 0004                       _IOCBbits 0096  
+                     _PIE1bits 008C                       _PIR1bits 000C                     _ADCON0bits 001F  
+                   _ADCON1bits 009F                       _WPUBbits 0095            _IOCBenableInterrupt 00FE  
+                   _ANSELHbits 0189           ?_IOCBenableInterrupt 0070         __size_of_configuracion 003F  
+                __size_of_main 000D                       _setupOsc 00D9   __end_of_initSPI_multiesclavo 00D9  
+                   _INTCONbits 000B          ??_IOCBenableInterrupt 0073                       intlevel1 0000  
+                   _OSCCONbits 008F                  _configuracion 0059         __size_of_IOCBpinEnable 0045  
+  __end_of_SPIenableRInterrupt 00FE                     _SSPCONbits 0014  

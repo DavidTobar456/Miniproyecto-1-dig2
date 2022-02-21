@@ -1,0 +1,1285 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"1708 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f887.h
+[s S63 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S63 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE ]
+"1707
+[u S62 `S63 1 ]
+[n S62 . . ]
+"1718
+[v _PIE1bits `VS62 ~T0 @X0 0 e@140 ]
+"543
+[s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S19 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF ]
+"542
+[u S18 `S19 1 ]
+[n S18 . . ]
+"553
+[v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
+"1422
+[s S53 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S53 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"1421
+[u S52 `S53 1 ]
+[n S52 . . ]
+"1433
+[v _TRISAbits `VS52 ~T0 @X0 0 e@133 ]
+"3393
+[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S133 . ANS0 ANS1 ANS2 ANS3 ANS4 ANS5 ANS6 ANS7 ]
+"3392
+[u S132 `S133 1 ]
+[n S132 . . ]
+"3404
+[v _ANSELbits `VS132 ~T0 @X0 0 e@392 ]
+"1670
+[s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S61 . TRISE0 TRISE1 TRISE2 TRISE3 ]
+"1669
+[u S60 `S61 1 ]
+[n S60 . . ]
+"1677
+[v _TRISEbits `VS60 ~T0 @X0 0 e@137 ]
+"1484
+[s S55 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S55 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"1483
+[u S54 `S55 1 ]
+[n S54 . . ]
+"1495
+[v _TRISBbits `VS54 ~T0 @X0 0 e@134 ]
+"3455
+[s S135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S135 . ANS8 ANS9 ANS10 ANS11 ANS12 ANS13 ]
+"3454
+[u S134 `S135 1 ]
+[n S134 . . ]
+"3464
+[v _ANSELHbits `VS134 ~T0 @X0 0 e@393 ]
+"1251
+[s S45 :1 `uc 1 :1 `uc 1 :4 `uc 1 :2 `uc 1 ]
+[n S45 . ADON GO_nDONE CHS ADCS ]
+"1257
+[s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S46 . . GO CHS0 CHS1 CHS2 CHS3 ADCS0 ADCS1 ]
+"1267
+[s S47 :1 `uc 1 :1 `uc 1 ]
+[n S47 . . nDONE ]
+"1271
+[s S48 :1 `uc 1 :1 `uc 1 ]
+[n S48 . . GO_DONE ]
+"1250
+[u S44 `S45 1 `S46 1 `S47 1 `S48 1 ]
+[n S44 . . . . . ]
+"1276
+[v _ADCON0bits `VS44 ~T0 @X0 0 e@31 ]
+"2983
+[s S116 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S116 . . VCFG0 VCFG1 . ADFM ]
+"2982
+[u S115 `S116 1 ]
+[n S115 . . ]
+"2991
+[v _ADCON1bits `VS115 ~T0 @X0 0 e@159 ]
+[v F1256 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
+[v __delay `JF1256 ~T0 @X0 0 e ]
+[p i __delay ]
+"1868 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f887.h
+[s S70 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S70 . SCS LTS HTS OSTS IRCF ]
+"1875
+[s S71 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S71 . . IRCF0 IRCF1 IRCF2 ]
+"1867
+[u S69 `S70 1 `S71 1 ]
+[n S69 . . . ]
+"1882
+[v _OSCCONbits `VS69 ~T0 @X0 0 e@143 ]
+"465
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RBIF INTF T0IF RBIE INTE T0IE PEIE GIE ]
+"475
+[s S17 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S17 . . TMR0IF . TMR0IE ]
+"464
+[u S15 `S16 1 `S17 1 ]
+[n S15 . . . ]
+"482
+[v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
+"2422
+[s S93 :8 `uc 1 ]
+[n S93 . IOCB ]
+"2425
+[s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S94 . IOCB0 IOCB1 IOCB2 IOCB3 IOCB4 IOCB5 IOCB6 IOCB7 ]
+"2421
+[u S92 `S93 1 `S94 1 ]
+[n S92 . . . ]
+"2436
+[v _IOCBbits `VS92 ~T0 @X0 0 e@150 ]
+"1352
+[s S50 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S50 . PS PSA T0SE T0CS INTEDG nRBPU ]
+"1360
+[s S51 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S51 . PS0 PS1 PS2 ]
+"1351
+[u S49 `S50 1 `S51 1 ]
+[n S49 . . . ]
+"1366
+[v _OPTION_REGbits `VS49 ~T0 @X0 0 e@129 ]
+"59
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"677
+[s S23 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S23 . TMR1ON TMR1CS nT1SYNC T1OSCEN T1CKPS TMR1GE T1GINV ]
+"686
+[s S24 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S24 . . T1INSYNC . T1CKPS0 T1CKPS1 . T1GIV ]
+"695
+[s S25 :2 `uc 1 :1 `uc 1 ]
+[n S25 . . T1SYNC ]
+"676
+[u S22 `S23 1 `S24 1 `S25 1 ]
+[n S22 . . . . ]
+"700
+[v _T1CONbits `VS22 ~T0 @X0 0 e@16 ]
+"664
+[v _TMR1H `Vuc ~T0 @X0 0 e@15 ]
+"657
+[v _TMR1L `Vuc ~T0 @X0 0 e@14 ]
+"856
+[s S30 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S30 . SSPM CKP SSPEN SSPOV WCOL ]
+"863
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . SSPM0 SSPM1 SSPM2 SSPM3 ]
+"855
+[u S29 `S30 1 `S31 1 ]
+[n S29 . . . ]
+"870
+[v _SSPCONbits `VS29 ~T0 @X0 0 e@20 ]
+"2183
+[s S82 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S82 . BF UA R_nW S P D_nA CKE SMP ]
+"2193
+[s S83 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S83 . . R . D ]
+"2199
+[s S84 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S84 . . I2C_READ I2C_START I2C_STOP I2C_DATA ]
+"2206
+[s S85 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S85 . . nW . nA ]
+"2212
+[s S86 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S86 . . nWRITE . nADDRESS ]
+"2218
+[s S87 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S87 . . R_W . D_A ]
+"2224
+[s S88 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S88 . . READ_WRITE . DATA_ADDRESS ]
+"2182
+[u S81 `S82 1 `S83 1 `S84 1 `S85 1 `S86 1 `S87 1 `S88 1 ]
+[n S81 . . . . . . . . ]
+"2231
+[v _SSPSTATbits `VS81 ~T0 @X0 0 e@148 ]
+"1546
+[s S57 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S57 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1545
+[u S56 `S57 1 ]
+[n S56 . . ]
+"1557
+[v _TRISCbits `VS56 ~T0 @X0 0 e@135 ]
+"843
+[v _SSPBUF `Vuc ~T0 @X0 0 e@19 ]
+"2562
+[s S99 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S99 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"2572
+[s S100 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S100 . TXD8 . nTX8 ]
+"2577
+[s S101 :6 `uc 1 :1 `uc 1 ]
+[n S101 . . TX8_9 ]
+"2561
+[u S98 `S99 1 `S100 1 `S101 1 ]
+[n S98 . . . . ]
+"2582
+[v _TXSTAbits `VS98 ~T0 @X0 0 e@152 ]
+"3341
+[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S131 . ABDEN WUE . BRG16 SCKP . RCIDL ABDOVF ]
+"3340
+[u S130 `S131 1 ]
+[n S130 . . ]
+"3352
+[v _BAUDCTLbits `VS130 ~T0 @X0 0 e@391 ]
+"2642
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"1044
+[s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S37 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"1054
+[s S38 :1 `uc 1 :5 `uc 1 :1 `uc 1 ]
+[n S38 . RCD8 . RC9 ]
+"1059
+[s S39 :6 `uc 1 :1 `uc 1 ]
+[n S39 . . nRC8 ]
+"1063
+[s S40 :6 `uc 1 :1 `uc 1 ]
+[n S40 . . RC8_9 ]
+"1043
+[u S36 `S37 1 `S38 1 `S39 1 `S40 1 ]
+[n S36 . . . . . ]
+"1068
+[v _RCSTAbits `VS36 ~T0 @X0 0 e@24 ]
+"1133
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"56 C:\Program Files\Microchip\xc8\v2.32\pic\include\c90\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c90\string.h: 56: extern size_t strlen(const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f887.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"230
+[; <" PORTB equ 06h ;# ">
+"292
+[; <" PORTC equ 07h ;# ">
+"354
+[; <" PORTD equ 08h ;# ">
+"416
+[; <" PORTE equ 09h ;# ">
+"454
+[; <" PCLATH equ 0Ah ;# ">
+"461
+[; <" INTCON equ 0Bh ;# ">
+"539
+[; <" PIR1 equ 0Ch ;# ">
+"595
+[; <" PIR2 equ 0Dh ;# ">
+"652
+[; <" TMR1 equ 0Eh ;# ">
+"659
+[; <" TMR1L equ 0Eh ;# ">
+"666
+[; <" TMR1H equ 0Fh ;# ">
+"673
+[; <" T1CON equ 010h ;# ">
+"767
+[; <" TMR2 equ 011h ;# ">
+"774
+[; <" T2CON equ 012h ;# ">
+"845
+[; <" SSPBUF equ 013h ;# ">
+"852
+[; <" SSPCON equ 014h ;# ">
+"922
+[; <" CCPR1 equ 015h ;# ">
+"929
+[; <" CCPR1L equ 015h ;# ">
+"936
+[; <" CCPR1H equ 016h ;# ">
+"943
+[; <" CCP1CON equ 017h ;# ">
+"1040
+[; <" RCSTA equ 018h ;# ">
+"1135
+[; <" TXREG equ 019h ;# ">
+"1142
+[; <" RCREG equ 01Ah ;# ">
+"1149
+[; <" CCPR2 equ 01Bh ;# ">
+"1156
+[; <" CCPR2L equ 01Bh ;# ">
+"1163
+[; <" CCPR2H equ 01Ch ;# ">
+"1170
+[; <" CCP2CON equ 01Dh ;# ">
+"1240
+[; <" ADRESH equ 01Eh ;# ">
+"1247
+[; <" ADCON0 equ 01Fh ;# ">
+"1348
+[; <" OPTION_REG equ 081h ;# ">
+"1418
+[; <" TRISA equ 085h ;# ">
+"1480
+[; <" TRISB equ 086h ;# ">
+"1542
+[; <" TRISC equ 087h ;# ">
+"1604
+[; <" TRISD equ 088h ;# ">
+"1666
+[; <" TRISE equ 089h ;# ">
+"1704
+[; <" PIE1 equ 08Ch ;# ">
+"1760
+[; <" PIE2 equ 08Dh ;# ">
+"1817
+[; <" PCON equ 08Eh ;# ">
+"1864
+[; <" OSCCON equ 08Fh ;# ">
+"1929
+[; <" OSCTUNE equ 090h ;# ">
+"1981
+[; <" SSPCON2 equ 091h ;# ">
+"2043
+[; <" PR2 equ 092h ;# ">
+"2050
+[; <" SSPADD equ 093h ;# ">
+"2057
+[; <" SSPMSK equ 093h ;# ">
+"2062
+[; <" MSK equ 093h ;# ">
+"2179
+[; <" SSPSTAT equ 094h ;# ">
+"2348
+[; <" WPUB equ 095h ;# ">
+"2418
+[; <" IOCB equ 096h ;# ">
+"2488
+[; <" VRCON equ 097h ;# ">
+"2558
+[; <" TXSTA equ 098h ;# ">
+"2644
+[; <" SPBRG equ 099h ;# ">
+"2706
+[; <" SPBRGH equ 09Ah ;# ">
+"2776
+[; <" PWM1CON equ 09Bh ;# ">
+"2846
+[; <" ECCPAS equ 09Ch ;# ">
+"2928
+[; <" PSTRCON equ 09Dh ;# ">
+"2972
+[; <" ADRESL equ 09Eh ;# ">
+"2979
+[; <" ADCON1 equ 09Fh ;# ">
+"3013
+[; <" WDTCON equ 0105h ;# ">
+"3066
+[; <" CM1CON0 equ 0107h ;# ">
+"3131
+[; <" CM2CON0 equ 0108h ;# ">
+"3196
+[; <" CM2CON1 equ 0109h ;# ">
+"3247
+[; <" EEDATA equ 010Ch ;# ">
+"3252
+[; <" EEDAT equ 010Ch ;# ">
+"3259
+[; <" EEADR equ 010Dh ;# ">
+"3266
+[; <" EEDATH equ 010Eh ;# ">
+"3273
+[; <" EEADRH equ 010Fh ;# ">
+"3280
+[; <" SRCON equ 0185h ;# ">
+"3337
+[; <" BAUDCTL equ 0187h ;# ">
+"3389
+[; <" ANSEL equ 0188h ;# ">
+"3451
+[; <" ANSELH equ 0189h ;# ">
+"3501
+[; <" EECON1 equ 018Ch ;# ">
+"3546
+[; <" EECON2 equ 018Dh ;# ">
+"17 C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 17: void ADCenableInterrupt(void){
+[v _ADCenableInterrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _ADCenableInterrupt ]
+[f ]
+"18
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 18:     PIE1bits.ADIE=1;
+[e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
+"19
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 19:     PIR1bits.ADIF=0;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"20
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 20:     return;
+[e $UE 138  ]
+"21
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 21: }
+[e :UE 138 ]
+}
+"23
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 23: void ADCenableAnalogPort(uint8_t puerto){
+[v _ADCenableAnalogPort `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _ADCenableAnalogPort ]
+[v _puerto `uc ~T0 @X0 1 r1 ]
+[f ]
+"24
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 24:     switch(puerto){
+[e $U 141  ]
+{
+"25
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 25:         case 0:
+[e :U 142 ]
+"26
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 26:             TRISAbits.TRISA0=1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"27
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 27:             ANSELbits.ANS0=1;
+[e = . . _ANSELbits 0 0 -> -> 1 `i `uc ]
+"28
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 28:             break;
+[e $U 140  ]
+"29
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 29:         case 1:
+[e :U 143 ]
+"30
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 30:             TRISAbits.TRISA1=1;
+[e = . . _TRISAbits 0 1 -> -> 1 `i `uc ]
+"31
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 31:             ANSELbits.ANS1=1;
+[e = . . _ANSELbits 0 1 -> -> 1 `i `uc ]
+"32
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 32:             break;
+[e $U 140  ]
+"33
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 33:         case 2:
+[e :U 144 ]
+"34
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 34:             TRISAbits.TRISA2=1;
+[e = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
+"35
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 35:             ANSELbits.ANS2=1;
+[e = . . _ANSELbits 0 2 -> -> 1 `i `uc ]
+"36
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 36:             break;
+[e $U 140  ]
+"37
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 37:         case 3:
+[e :U 145 ]
+"38
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 38:             TRISAbits.TRISA3=1;
+[e = . . _TRISAbits 0 3 -> -> 1 `i `uc ]
+"39
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 39:             ANSELbits.ANS3=1;
+[e = . . _ANSELbits 0 3 -> -> 1 `i `uc ]
+"40
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 40:             break;
+[e $U 140  ]
+"41
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 41:         case 4:
+[e :U 146 ]
+"42
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 42:             TRISAbits.TRISA5=1;
+[e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
+"43
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 43:             ANSELbits.ANS4=1;
+[e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
+"44
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 44:             break;
+[e $U 140  ]
+"45
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 45:         case 5:
+[e :U 147 ]
+"46
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 46:             TRISEbits.TRISE0=1;
+[e = . . _TRISEbits 0 0 -> -> 1 `i `uc ]
+"47
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 47:             ANSELbits.ANS5=1;
+[e = . . _ANSELbits 0 5 -> -> 1 `i `uc ]
+"48
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 48:             break;
+[e $U 140  ]
+"49
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 49:         case 6:
+[e :U 148 ]
+"50
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 50:             TRISEbits.TRISE1=1;
+[e = . . _TRISEbits 0 1 -> -> 1 `i `uc ]
+"51
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 51:             ANSELbits.ANS6=1;
+[e = . . _ANSELbits 0 6 -> -> 1 `i `uc ]
+"52
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 52:             break;
+[e $U 140  ]
+"53
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 53:         case 7:
+[e :U 149 ]
+"54
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 54:             TRISEbits.TRISE2=1;
+[e = . . _TRISEbits 0 2 -> -> 1 `i `uc ]
+"55
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 55:             ANSELbits.ANS7=1;
+[e = . . _ANSELbits 0 7 -> -> 1 `i `uc ]
+"56
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 56:             break;
+[e $U 140  ]
+"57
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 57:         case 8:
+[e :U 150 ]
+"58
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 58:             TRISBbits.TRISB2=1;
+[e = . . _TRISBbits 0 2 -> -> 1 `i `uc ]
+"59
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 59:             ANSELHbits.ANS8=1;
+[e = . . _ANSELHbits 0 0 -> -> 1 `i `uc ]
+"60
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 60:             break;
+[e $U 140  ]
+"61
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 61:         case 9:
+[e :U 151 ]
+"62
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 62:             TRISBbits.TRISB3=1;
+[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
+"63
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 63:             ANSELHbits.ANS9=1;
+[e = . . _ANSELHbits 0 1 -> -> 1 `i `uc ]
+"64
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 64:             break;
+[e $U 140  ]
+"65
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 65:         case 10:
+[e :U 152 ]
+"66
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 66:             TRISBbits.TRISB1=1;
+[e = . . _TRISBbits 0 1 -> -> 1 `i `uc ]
+"67
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 67:             ANSELHbits.ANS10=1;
+[e = . . _ANSELHbits 0 2 -> -> 1 `i `uc ]
+"68
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 68:             break;
+[e $U 140  ]
+"69
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 69:         case 11:
+[e :U 153 ]
+"70
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 70:             TRISBbits.TRISB4=1;
+[e = . . _TRISBbits 0 4 -> -> 1 `i `uc ]
+"71
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 71:             ANSELHbits.ANS11=1;
+[e = . . _ANSELHbits 0 3 -> -> 1 `i `uc ]
+"72
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 72:             break;
+[e $U 140  ]
+"73
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 73:         case 12:
+[e :U 154 ]
+"74
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 74:             TRISBbits.TRISB0=1;
+[e = . . _TRISBbits 0 0 -> -> 1 `i `uc ]
+"75
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 75:             ANSELHbits.ANS12=1;
+[e = . . _ANSELHbits 0 4 -> -> 1 `i `uc ]
+"76
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 76:             break;
+[e $U 140  ]
+"77
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 77:         case 13:
+[e :U 155 ]
+"78
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 78:             TRISBbits.TRISB5=1;
+[e = . . _TRISBbits 0 5 -> -> 1 `i `uc ]
+"79
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 79:             ANSELHbits.ANS13=1;
+[e = . . _ANSELHbits 0 5 -> -> 1 `i `uc ]
+"80
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 80:             break;
+[e $U 140  ]
+"81
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 81:         default:
+[e :U 156 ]
+"82
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 82:             break;
+[e $U 140  ]
+"83
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 83:     }
+}
+[e $U 140  ]
+[e :U 141 ]
+[e [\ -> _puerto `i , $ -> 0 `i 142
+ , $ -> 1 `i 143
+ , $ -> 2 `i 144
+ , $ -> 3 `i 145
+ , $ -> 4 `i 146
+ , $ -> 5 `i 147
+ , $ -> 6 `i 148
+ , $ -> 7 `i 149
+ , $ -> 8 `i 150
+ , $ -> 9 `i 151
+ , $ -> 10 `i 152
+ , $ -> 11 `i 153
+ , $ -> 12 `i 154
+ , $ -> 13 `i 155
+ 156 ]
+[e :U 140 ]
+"84
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 84:     return;
+[e $UE 139  ]
+"85
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 85: }
+[e :UE 139 ]
+}
+"87
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 87: void ADCchannelSelect(uint8_t canal){
+[v _ADCchannelSelect `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _ADCchannelSelect ]
+[v _canal `uc ~T0 @X0 1 r1 ]
+[f ]
+"88
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 88:     ADCON0bits.CHS=canal;
+[e = . . _ADCON0bits 0 2 _canal ]
+"89
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 89:     return;
+[e $UE 157  ]
+"90
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 90: }
+[e :UE 157 ]
+}
+"92
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 92: void ADCstartMeasure(void){
+[v _ADCstartMeasure `(v ~T0 @X0 1 ef ]
+{
+[e :U _ADCstartMeasure ]
+[f ]
+"93
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 93:     ADCON0bits.GO=1;
+[e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
+"94
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 94:     return;
+[e $UE 158  ]
+"95
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 95: }
+[e :UE 158 ]
+}
+"97
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 97: void setupADC(uint8_t Fosc, uint8_t VrefP, uint8_t VrefN, uint8_t channel,
+[v _setupADC `(v ~T0 @X0 1 ef5`uc`uc`uc`uc`uc ]
+"98
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 98:                 uint8_t align){
+{
+[e :U _setupADC ]
+"97
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 97: void setupADC(uint8_t Fosc, uint8_t VrefP, uint8_t VrefN, uint8_t channel,
+[v _Fosc `uc ~T0 @X0 1 r1 ]
+[v _VrefP `uc ~T0 @X0 1 r2 ]
+[v _VrefN `uc ~T0 @X0 1 r3 ]
+[v _channel `uc ~T0 @X0 1 r4 ]
+"98
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 98:                 uint8_t align){
+[v _align `uc ~T0 @X0 1 r5 ]
+[f ]
+"99
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 99:     ADCON0bits.ADCS=Fosc;
+[e = . . _ADCON0bits 0 3 _Fosc ]
+"100
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 100:     ADCON1bits.VCFG0=VrefP;
+[e = . . _ADCON1bits 0 1 _VrefP ]
+"101
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 101:     ADCON1bits.VCFG1=VrefN;
+[e = . . _ADCON1bits 0 2 _VrefN ]
+"102
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 102:     ADCON0bits.CHS=channel;
+[e = . . _ADCON0bits 0 2 _channel ]
+"103
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 103:     _delay((unsigned long)((50)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"104
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 104:     ADCON1bits.ADFM=align;
+[e = . . _ADCON1bits 0 4 _align ]
+"105
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 105:     ADCON0bits.ADON=1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"106
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 106:     PIR1bits.ADIF=0;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+"107
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 107:     return;
+[e $UE 159  ]
+"108
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 108: }
+[e :UE 159 ]
+}
+"112
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 112: void setupOsc(uint8_t freq, uint8_t clkSrc){
+[v _setupOsc `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _setupOsc ]
+[v _freq `uc ~T0 @X0 1 r1 ]
+[v _clkSrc `uc ~T0 @X0 1 r2 ]
+[f ]
+"113
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 113:     OSCCONbits.SCS=clkSrc;
+[e = . . _OSCCONbits 0 0 _clkSrc ]
+"114
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 114:     OSCCONbits.IRCF=freq;
+[e = . . _OSCCONbits 0 4 _freq ]
+"115
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 115:     return;
+[e $UE 160  ]
+"116
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 116: }
+[e :UE 160 ]
+}
+"120
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 120: void IOCBenableInterrupt(void){
+[v _IOCBenableInterrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _IOCBenableInterrupt ]
+[f ]
+"121
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 121:     INTCONbits.RBIE=1;
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"122
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 122:     INTCONbits.RBIF=0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"123
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 123: }
+[e :UE 161 ]
+}
+"125
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 125: void IOCBpinEnable(uint8_t pin){
+[v _IOCBpinEnable `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _IOCBpinEnable ]
+[v _pin `uc ~T0 @X0 1 r1 ]
+[f ]
+"126
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 126:     switch(pin){
+[e $U 164  ]
+{
+"127
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 127:         case 0:
+[e :U 165 ]
+"128
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 128:             IOCBbits.IOCB0=1;
+[e = . . _IOCBbits 1 0 -> -> 1 `i `uc ]
+"129
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 129:             break;
+[e $U 163  ]
+"130
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 130:         case 1:
+[e :U 166 ]
+"131
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 131:             IOCBbits.IOCB1=1;
+[e = . . _IOCBbits 1 1 -> -> 1 `i `uc ]
+"132
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 132:             break;
+[e $U 163  ]
+"133
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 133:         case 2:
+[e :U 167 ]
+"134
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 134:             IOCBbits.IOCB2=1;
+[e = . . _IOCBbits 1 2 -> -> 1 `i `uc ]
+"135
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 135:             break;
+[e $U 163  ]
+"136
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 136:         case 3:
+[e :U 168 ]
+"137
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 137:             IOCBbits.IOCB3=1;
+[e = . . _IOCBbits 1 3 -> -> 1 `i `uc ]
+"138
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 138:             break;
+[e $U 163  ]
+"139
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 139:         case 4:
+[e :U 169 ]
+"140
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 140:             IOCBbits.IOCB4=1;
+[e = . . _IOCBbits 1 4 -> -> 1 `i `uc ]
+"141
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 141:             break;
+[e $U 163  ]
+"142
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 142:         case 5:
+[e :U 170 ]
+"143
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 143:             IOCBbits.IOCB5=1;
+[e = . . _IOCBbits 1 5 -> -> 1 `i `uc ]
+"144
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 144:             break;
+[e $U 163  ]
+"145
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 145:         case 6:
+[e :U 171 ]
+"146
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 146:             IOCBbits.IOCB6=1;
+[e = . . _IOCBbits 1 6 -> -> 1 `i `uc ]
+"147
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 147:             break;
+[e $U 163  ]
+"148
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 148:         case 7:
+[e :U 172 ]
+"149
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 149:             IOCBbits.IOCB7=1;
+[e = . . _IOCBbits 1 7 -> -> 1 `i `uc ]
+"150
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 150:             break;
+[e $U 163  ]
+"151
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 151:         default:
+[e :U 173 ]
+"152
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 152:             break;
+[e $U 163  ]
+"153
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 153:     }
+}
+[e $U 163  ]
+[e :U 164 ]
+[e [\ -> _pin `i , $ -> 0 `i 165
+ , $ -> 1 `i 166
+ , $ -> 2 `i 167
+ , $ -> 3 `i 168
+ , $ -> 4 `i 169
+ , $ -> 5 `i 170
+ , $ -> 6 `i 171
+ , $ -> 7 `i 172
+ 173 ]
+[e :U 163 ]
+"154
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 154: }
+[e :UE 162 ]
+}
+"158
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 158: void setupTimer0(uint8_t clkSrc, uint8_t prescaler, uint8_t carga){
+[v _setupTimer0 `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[e :U _setupTimer0 ]
+[v _clkSrc `uc ~T0 @X0 1 r1 ]
+[v _prescaler `uc ~T0 @X0 1 r2 ]
+[v _carga `uc ~T0 @X0 1 r3 ]
+[f ]
+"159
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 159:     OPTION_REGbits.T0CS=clkSrc;
+[e = . . _OPTION_REGbits 0 3 _clkSrc ]
+"160
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 160:     OPTION_REGbits.PSA=0;
+[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
+"161
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 161:     OPTION_REGbits.PS=prescaler;
+[e = . . _OPTION_REGbits 0 0 _prescaler ]
+"162
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 162:     TMR0=carga;
+[e = _TMR0 _carga ]
+"163
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 163:     INTCONbits.T0IF=0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"164
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 164: }
+[e :UE 174 ]
+}
+"166
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 166: void resTimer0(uint8_t carga){
+[v _resTimer0 `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _resTimer0 ]
+[v _carga `uc ~T0 @X0 1 r1 ]
+[f ]
+"167
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 167:     TMR0=carga;
+[e = _TMR0 _carga ]
+"168
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 168:     INTCONbits.T0IF=0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"169
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 169: }
+[e :UE 175 ]
+}
+"171
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 171: void T0enableInterrupt(void){
+[v _T0enableInterrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _T0enableInterrupt ]
+[f ]
+"172
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 172:     INTCONbits.T0IE=1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"173
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 173:     INTCONbits.T0IF=0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"174
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 174: }
+[e :UE 176 ]
+}
+"178
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 178: void setupTimer1(uint8_t clkSrc, uint8_t prescaler, int carga){
+[v _setupTimer1 `(v ~T0 @X0 1 ef3`uc`uc`i ]
+{
+[e :U _setupTimer1 ]
+[v _clkSrc `uc ~T0 @X0 1 r1 ]
+[v _prescaler `uc ~T0 @X0 1 r2 ]
+[v _carga `i ~T0 @X0 1 r3 ]
+[f ]
+"179
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 179:     T1CONbits.TMR1CS=clkSrc;
+[e = . . _T1CONbits 0 1 _clkSrc ]
+"180
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 180:     T1CONbits.T1CKPS=prescaler;
+[e = . . _T1CONbits 0 4 _prescaler ]
+"181
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 181:     T1CONbits.TMR1ON=1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+"182
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 182:     uint8_t T1L = carga & 0xFF;
+[v _T1L `uc ~T0 @X0 1 a ]
+[e = _T1L -> & _carga -> 255 `i `uc ]
+"183
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 183:     uint8_t T1H = carga>>8;
+[v _T1H `uc ~T0 @X0 1 a ]
+[e = _T1H -> >> _carga -> 8 `i `uc ]
+"184
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 184:     TMR1H = T1H;
+[e = _TMR1H _T1H ]
+"185
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 185:     TMR1L = T1L;
+[e = _TMR1L _T1L ]
+"186
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 186:     PIR1bits.TMR1IF=0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"187
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 187: }
+[e :UE 177 ]
+}
+"188
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 188: void resTimer1(int carga){
+[v _resTimer1 `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _resTimer1 ]
+[v _carga `i ~T0 @X0 1 r1 ]
+[f ]
+"189
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 189:     uint8_t T1L = carga & 0xFF;
+[v _T1L `uc ~T0 @X0 1 a ]
+[e = _T1L -> & _carga -> 255 `i `uc ]
+"190
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 190:     uint8_t T1H = carga>>8;
+[v _T1H `uc ~T0 @X0 1 a ]
+[e = _T1H -> >> _carga -> 8 `i `uc ]
+"191
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 191:     TMR1H = T1H;
+[e = _TMR1H _T1H ]
+"192
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 192:     TMR1L = T1L;
+[e = _TMR1L _T1L ]
+"193
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 193:     PIR1bits.TMR1IF=0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"194
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 194: }
+[e :UE 178 ]
+}
+"195
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 195: void T1enableInterrupt(void){
+[v _T1enableInterrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _T1enableInterrupt ]
+[f ]
+"196
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 196:     PIE1bits.TMR1IE=1;
+[e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
+"197
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 197:     PIR1bits.TMR1IF=0;
+[e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
+"198
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 198: }
+[e :UE 179 ]
+}
+"202
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 202: void initSPI_maestro(uint8_t SPIfosc){
+[v _initSPI_maestro `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _initSPI_maestro ]
+[v _SPIfosc `uc ~T0 @X0 1 r1 ]
+[f ]
+"204
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 204:     SSPCONbits.SSPEN=0;
+[e = . . _SSPCONbits 0 2 -> -> 0 `i `uc ]
+"206
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 206:     SSPSTATbits.SMP=1;
+[e = . . _SSPSTATbits 0 7 -> -> 1 `i `uc ]
+"208
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 208:     SSPCONbits.CKP=0;
+[e = . . _SSPCONbits 0 1 -> -> 0 `i `uc ]
+"209
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 209:     SSPSTATbits.CKE=0;
+[e = . . _SSPSTATbits 0 6 -> -> 0 `i `uc ]
+"211
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 211:     SSPCONbits.SSPM=SPIfosc;
+[e = . . _SSPCONbits 0 0 _SPIfosc ]
+"213
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 213:     TRISCbits.TRISC4=1;
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+"214
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 214:     TRISCbits.TRISC5=0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"215
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 215:     TRISCbits.TRISC3=0;
+[e = . . _TRISCbits 0 3 -> -> 0 `i `uc ]
+"217
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 217:     SSPCONbits.SSPEN=1;
+[e = . . _SSPCONbits 0 2 -> -> 1 `i `uc ]
+"218
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 218: }
+[e :UE 180 ]
+}
+"219
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 219: void initSPI_esclavo(void){
+[v _initSPI_esclavo `(v ~T0 @X0 1 ef ]
+{
+[e :U _initSPI_esclavo ]
+[f ]
+"221
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 221:     SSPCONbits.SSPEN=0;
+[e = . . _SSPCONbits 0 2 -> -> 0 `i `uc ]
+"223
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 223:     SSPCONbits.CKP=0;
+[e = . . _SSPCONbits 0 1 -> -> 0 `i `uc ]
+"224
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 224:     SSPSTATbits.CKE=0;
+[e = . . _SSPSTATbits 0 6 -> -> 0 `i `uc ]
+"226
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 226:     SSPCONbits.SSPM=0b0101;
+[e = . . _SSPCONbits 0 0 -> -> 5 `i `uc ]
+"228
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 228:     TRISCbits.TRISC4=1;
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+"229
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 229:     TRISCbits.TRISC5=0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"230
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 230:     TRISCbits.TRISC3=1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"232
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 232:     SSPCONbits.SSPEN=1;
+[e = . . _SSPCONbits 0 2 -> -> 1 `i `uc ]
+"233
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 233: }
+[e :UE 181 ]
+}
+"234
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 234: void initSPI_multiesclavo(void){
+[v _initSPI_multiesclavo `(v ~T0 @X0 1 ef ]
+{
+[e :U _initSPI_multiesclavo ]
+[f ]
+"236
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 236:     SSPCONbits.SSPEN=0;
+[e = . . _SSPCONbits 0 2 -> -> 0 `i `uc ]
+"238
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 238:     SSPCONbits.CKP=0;
+[e = . . _SSPCONbits 0 1 -> -> 0 `i `uc ]
+"239
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 239:     SSPSTATbits.CKE=0;
+[e = . . _SSPSTATbits 0 6 -> -> 0 `i `uc ]
+"241
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 241:     SSPCONbits.SSPM=0b0100;
+[e = . . _SSPCONbits 0 0 -> -> 4 `i `uc ]
+"243
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 243:     TRISCbits.TRISC4=1;
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+"244
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 244:     TRISCbits.TRISC5=0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"245
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 245:     TRISCbits.TRISC3=1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"246
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 246:     TRISAbits.TRISA5=1;
+[e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
+"248
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 248:     SSPCONbits.SSPEN=1;
+[e = . . _SSPCONbits 0 2 -> -> 1 `i `uc ]
+"249
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 249: }
+[e :UE 182 ]
+}
+"251
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 251: void SPIenableRInterrupt(void){
+[v _SPIenableRInterrupt `(v ~T0 @X0 1 ef ]
+{
+[e :U _SPIenableRInterrupt ]
+[f ]
+"252
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 252:     PIE1bits.SSPIE=1;
+[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
+"253
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 253:     PIR1bits.SSPIF=0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+"254
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 254: }
+[e :UE 183 ]
+}
+"256
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 256: void SPIsendValue(uint8_t valor){
+[v _SPIsendValue `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _SPIsendValue ]
+[v _valor `uc ~T0 @X0 1 r1 ]
+[f ]
+"257
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 257:     SSPBUF=valor;
+[e = _SSPBUF _valor ]
+"258
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 258: }
+[e :UE 184 ]
+}
+"260
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 260: void SPIBufferVerify(void){
+[v _SPIBufferVerify `(v ~T0 @X0 1 ef ]
+{
+[e :U _SPIBufferVerify ]
+[f ]
+"261
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 261:     while(!SSPSTATbits.BF);
+[e $U 186  ]
+[e :U 187 ]
+[e :U 186 ]
+[e $ ! != -> . . _SSPSTATbits 0 0 `i -> 0 `i 187  ]
+[e :U 188 ]
+"262
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 262: }
+[e :UE 185 ]
+}
+"264
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 264: void SPIreadValue(uint8_t *variable){
+[v _SPIreadValue `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _SPIreadValue ]
+[v _variable `*uc ~T0 @X0 1 r1 ]
+[f ]
+"265
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 265:     SPIBufferVerify();
+[e ( _SPIBufferVerify ..  ]
+"266
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 266:     *variable = SSPBUF;
+[e = *U _variable _SSPBUF ]
+"267
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 267: }
+[e :UE 189 ]
+}
+"271
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 271: void initUSARTransmit(uint8_t BRGH, uint8_t BRG16, uint8_t vBRG){
+[v _initUSARTransmit `(v ~T0 @X0 1 ef3`uc`uc`uc ]
+{
+[e :U _initUSARTransmit ]
+[v _BRGH `uc ~T0 @X0 1 r1 ]
+[v _BRG16 `uc ~T0 @X0 1 r2 ]
+[v _vBRG `uc ~T0 @X0 1 r3 ]
+[f ]
+"273
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 273:     TXSTAbits.BRGH=BRGH;
+[e = . . _TXSTAbits 0 2 _BRGH ]
+"274
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 274:     BAUDCTLbits.BRG16=BRG16;
+[e = . . _BAUDCTLbits 0 3 _BRG16 ]
+"275
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 275:     SPBRG=vBRG;
+[e = _SPBRG _vBRG ]
+"277
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 277:     RCSTAbits.SPEN=1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"278
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 278:     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"280
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 280:     TXSTAbits.TX9=0;
+[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
+"282
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 282:     TXSTAbits.TXEN=1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"283
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 283:     PIR1bits.TXIF=0;
+[e = . . _PIR1bits 0 4 -> -> 0 `i `uc ]
+"284
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 284: }
+[e :UE 190 ]
+}
+"286
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 286: void UARTprintCharacter(char caracter){
+[v _UARTprintCharacter `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _UARTprintCharacter ]
+[v _caracter `uc ~T0 @X0 1 r1 ]
+[f ]
+"287
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 287:     while(!TXSTAbits.TRMT);
+[e $U 192  ]
+[e :U 193 ]
+[e :U 192 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 193  ]
+[e :U 194 ]
+"288
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 288:     TXREG=caracter;
+[e = _TXREG -> _caracter `uc ]
+"289
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 289: }
+[e :UE 191 ]
+}
+"291
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 291: void UARTprintDigit(char digito){
+[v _UARTprintDigit `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _UARTprintDigit ]
+[v _digito `uc ~T0 @X0 1 r1 ]
+[f ]
+"292
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 292:     while(!TXSTAbits.TRMT);
+[e $U 196  ]
+[e :U 197 ]
+[e :U 196 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 197  ]
+[e :U 198 ]
+"293
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 293:     TXREG=digito+48;
+[e = _TXREG -> + -> _digito `i -> 48 `i `uc ]
+"294
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 294: }
+[e :UE 195 ]
+}
+"296
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 296: void UARTprintText(char texto[]){
+[v _UARTprintText `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _UARTprintText ]
+[v _texto `*uc ~T0 @X0 1 r1 ]
+[f ]
+"297
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 297:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"298
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 298:     for(i=0;i<=strlen(texto);i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 203  ]
+[e :U 200 ]
+{
+"299
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 299:         UARTprintCharacter(texto[i]);
+[e ( _UARTprintCharacter (1 *U + _texto * -> _i `ux -> -> # *U _texto `ui `ux ]
+"300
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 300:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 203 ]
+[e $ <= -> _i `ui ( _strlen (1 -> _texto `*Cuc 200  ]
+[e :U 201 ]
+}
+"301
+[; ;C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c: 301: }
+[e :UE 199 ]
+}
