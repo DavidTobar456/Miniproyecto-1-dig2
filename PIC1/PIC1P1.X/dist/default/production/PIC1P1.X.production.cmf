@@ -1,0 +1,884 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\PIC1P1.X.production.o
+cinit CODE 0 F F D 2
+text1 CODE 0 20A 20A 81 2
+text2 CODE 0 35E 35E 5B 2
+text3 CODE 0 2F5 2F5 69 2
+text4 CODE 0 49E 49E 28 2
+text5 CODE 0 28B 28B 6A 2
+text6 CODE 0 402 402 34 2
+text7 CODE 0 57C 57C 1F 2
+text8 CODE 0 512 512 24 2
+text9 CODE 0 60A 60A 17 2
+text10 CODE 0 3B9 3B9 49 2
+text11 CODE 0 59B 59B 1F 2
+text12 CODE 0 5D7 5D7 1B 2
+text13 CODE 0 4ED 4ED 25 2
+text14 CODE 0 5BA 5BA 1D 2
+text15 CODE 0 6A0 6A0 7 2
+text16 CODE 0 4C6 4C6 27 2
+text17 CODE 0 436 436 34 2
+text18 CODE 0 68A 68A E 2
+text19 CODE 0 66C 66C F 2
+text20 CODE 0 6AE 6AE 6 2
+text21 CODE 0 64A 64A 12 2
+text22 CODE 0 6A7 6A7 7 2
+text23 CODE 0 46A 46A 34 2
+text24 CODE 0 536 536 24 2
+text25 CODE 0 636 636 14 2
+text26 CODE 0 621 621 15 2
+text27 CODE 0 67B 67B F 2
+text28 CODE 0 5F2 5F2 18 2
+text29 CODE 0 65C 65C 10 2
+maintext CODE 0 1C 1C 1EE 2
+cstackCOMMON COMMON 1 70 70 7 1
+cstackBANK0 BANK0 1 20 20 2B 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 4B 4B 20 1
+strings STRING 0 55A 55A 22 2
+clrtext CODE 0 698 698 8 2
+config CONFIG 4 2007 2007 2 2
+$C:\Users\david\AppData\Local\Temp\xcAsatg.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6B-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 6B-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 6B4-1FFF 2
+ENTRY 3-3 2
+ENTRY 6B4-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 6B4-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 77-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 6B4-1FFF 2
+STRING 3-3 2
+STRING 6B4-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PIC1P1.X.production.o
+F cinit CODE >920:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+F cinit CODE >923:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+F cinit CODE >976:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+10 cinit CODE >977:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+11 cinit CODE >978:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+12 cinit CODE >979:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+13 cinit CODE >980:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+18 cinit CODE >986:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+18 cinit CODE >988:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+19 cinit CODE >989:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+4 intentry CODE >66:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+65C text29 CODE >188:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+65C text29 CODE >189:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+660 text29 CODE >190:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+664 text29 CODE >191:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+668 text29 CODE >192:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+66A text29 CODE >193:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+66B text29 CODE >194:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5F2 text28 CODE >66:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+5F2 text28 CODE >67:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+5F8 text28 CODE >68:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+5FA text28 CODE >69:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+603 text28 CODE >71:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+67B text27 CODE >21:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+67B text27 CODE >22:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+67E text27 CODE >23:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+686 text27 CODE >24:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+689 text27 CODE >25:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+621 text26 CODE >82:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+624 text26 CODE >83:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+625 text26 CODE >84:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+626 text26 CODE >85:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+629 text26 CODE >86:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+62E text26 CODE >87:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+635 text26 CODE >88:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+636 text25 CODE >92:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+639 text25 CODE >93:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+63A text25 CODE >94:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+63B text25 CODE >95:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+63D text25 CODE >96:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+642 text25 CODE >97:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+649 text25 CODE >98:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+536 text24 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+536 text24 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+53C text24 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+53D text24 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+53F text24 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+543 text24 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+54D text24 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+551 text24 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+555 text24 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+559 text24 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+46A text23 CODE >135:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+46A text23 CODE >137:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+46E text23 CODE >138:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+472 text23 CODE >138:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+47F text23 CODE >139:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+495 text23 CODE >139:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+499 text23 CODE >139:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+49D text23 CODE >140:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+6A7 text22 CODE >260:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6A7 text22 CODE >261:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6AD text22 CODE >262:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+64A text21 CODE >264:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+64D text21 CODE >265:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+652 text21 CODE >266:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+65B text21 CODE >267:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6AE text20 CODE >256:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6B1 text20 CODE >257:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6B3 text20 CODE >258:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+66C text19 CODE >291:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+66F text19 CODE >292:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+675 text19 CODE >293:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+67A text19 CODE >294:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+68A text18 CODE >286:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+68D text18 CODE >287:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+693 text18 CODE >288:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+697 text18 CODE >289:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+436 text17 CODE >296:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+436 text17 CODE >298:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+43A text17 CODE >299:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+43E text17 CODE >299:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+44B text17 CODE >300:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+461 text17 CODE >300:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+465 text17 CODE >300:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+469 text17 CODE >301:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4C6 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4C6 text16 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4CA text16 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4CE text16 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4D0 text16 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4D4 text16 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4D5 text16 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4D9 text16 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4DB text16 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4DC text16 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4E0 text16 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4E2 text16 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4E8 text16 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+4EC text16 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+6A0 text15 CODE >195:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6A0 text15 CODE >196:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6A3 text15 CODE >197:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+6A6 text15 CODE >198:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5BA text14 CODE >202:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5BD text14 CODE >204:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5BE text14 CODE >206:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5C1 text14 CODE >208:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5C4 text14 CODE >209:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5C7 text14 CODE >211:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5CE text14 CODE >213:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5D1 text14 CODE >214:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5D2 text14 CODE >215:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5D3 text14 CODE >217:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5D6 text14 CODE >218:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4ED text13 CODE >271:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4F0 text13 CODE >273:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4F3 text13 CODE >273:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4F5 text13 CODE >273:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4F7 text13 CODE >274:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4FC text13 CODE >274:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+4FE text13 CODE >274:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+500 text13 CODE >275:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+506 text13 CODE >277:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+509 text13 CODE >278:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+50C text13 CODE >280:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+50D text13 CODE >282:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+50E text13 CODE >283:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+511 text13 CODE >284:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5D7 text12 CODE >112:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5DA text12 CODE >113:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5DD text12 CODE >113:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5DF text12 CODE >113:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5E1 text12 CODE >114:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5F1 text12 CODE >116:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+59B text11 CODE >178:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+59E text11 CODE >179:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+59F text11 CODE >179:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5A1 text11 CODE >179:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5A3 text11 CODE >180:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5AB text11 CODE >181:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5AC text11 CODE >182:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5B0 text11 CODE >183:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5B4 text11 CODE >184:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5B6 text11 CODE >185:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5B8 text11 CODE >186:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+5B9 text11 CODE >187:C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+3B9 text10 CODE >150:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3B9 text10 CODE >153:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3BC text10 CODE >154:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3BD text10 CODE >156:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C0 text10 CODE >157:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C1 text10 CODE >158:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C2 text10 CODE >159:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C3 text10 CODE >160:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C4 text10 CODE >162:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C7 text10 CODE >163:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C8 text10 CODE >164:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3C9 text10 CODE >165:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3CA text10 CODE >166:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3CB text10 CODE >170:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3D3 text10 CODE >174:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3D9 text10 CODE >178:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3E7 text10 CODE >182:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3F5 text10 CODE >186:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3F6 text10 CODE >187:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3F7 text10 CODE >188:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3FC text10 CODE >192:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3FF text10 CODE >193:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+400 text10 CODE >194:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+401 text10 CODE >197:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+60A text9 CODE >29:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+60A text9 CODE >30:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+60D text9 CODE >31:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+60E text9 CODE >32:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+610 text9 CODE >33:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+615 text9 CODE >34:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+620 text9 CODE >35:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+512 text8 CODE >50:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+515 text8 CODE >51:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+516 text8 CODE >52:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+517 text8 CODE >53:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+518 text8 CODE >54:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+51B text8 CODE >54:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+51E text8 CODE >54:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+529 text8 CODE >55:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+52E text8 CODE >56:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+535 text8 CODE >57:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+57C text7 CODE >39:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+57F text7 CODE >40:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+580 text7 CODE >41:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+581 text7 CODE >42:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+582 text7 CODE >43:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+585 text7 CODE >43:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+588 text7 CODE >43:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+58E text7 CODE >44:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+593 text7 CODE >45:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+59A text7 CODE >46:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+402 text6 CODE >61:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+405 text6 CODE >62:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+406 text6 CODE >63:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+407 text6 CODE >64:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+408 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+40B text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+40E text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+413 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+416 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+418 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+41F text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+422 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+424 text6 CODE >65:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+429 text6 CODE >66:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+42E text6 CODE >67:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+435 text6 CODE >68:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+28B text5 CODE >117:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+28B text5 CODE >120:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+296 text5 CODE >121:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2A0 text5 CODE >122:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2AA text5 CODE >123:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2B4 text5 CODE >124:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2BB text5 CODE >125:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2C5 text5 CODE >126:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2D0 text5 CODE >127:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2DA text5 CODE >128:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2DF text5 CODE >129:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2E8 text5 CODE >130:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+2F4 text5 CODE >131:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\LCDcontrol.c
+49E text4 CODE >216:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A1 text4 CODE >217:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A2 text4 CODE >218:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A2 text4 CODE >219:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A3 text4 CODE >220:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A4 text4 CODE >221:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A5 text4 CODE >222:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A6 text4 CODE >223:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A6 text4 CODE >224:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A7 text4 CODE >225:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A8 text4 CODE >226:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A9 text4 CODE >227:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AA text4 CODE >228:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AA text4 CODE >229:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AB text4 CODE >230:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AC text4 CODE >231:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AD text4 CODE >232:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AE text4 CODE >233:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AE text4 CODE >234:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4AF text4 CODE >235:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4B0 text4 CODE >236:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4B1 text4 CODE >237:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4B2 text4 CODE >238:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4B7 text4 CODE >238:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4BC text4 CODE >238:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4BF text4 CODE >238:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4C2 text4 CODE >238:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4C5 text4 CODE >239:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+2F5 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+2F5 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+2F8 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+2FC text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+2FF text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+301 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+303 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+307 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+30A text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+30C text3 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+310 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+312 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+318 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+31A text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+31B text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+31C text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+320 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+322 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+326 text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+32A text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+32B text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+32F text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+331 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+333 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+337 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+33B text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+33E text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+341 text3 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+342 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+343 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+347 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+349 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+34F text3 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+354 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+357 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+359 text3 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+35D text3 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+35E text2 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+35E text2 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+361 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+365 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+368 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+36A text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+36C text2 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+370 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+373 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+375 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+37B text2 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+37D text2 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+37E text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+37F text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+383 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+385 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+389 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+38D text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+38F text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+393 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+397 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+39A text2 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+39D text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+39E text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3A2 text2 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3A4 text2 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3AA text2 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3AF text2 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3B2 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3B4 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+3B8 text2 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
+20A text1 CODE >199:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+20A text1 CODE >201:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+21F text1 CODE >202:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+221 text1 CODE >202:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+225 text1 CODE >202:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+229 text1 CODE >203:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+22D text1 CODE >204:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+22E text1 CODE >205:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+236 text1 CODE >205:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+248 text1 CODE >207:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+25B text1 CODE >208:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+25D text1 CODE >208:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+261 text1 CODE >208:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+265 text1 CODE >209:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+269 text1 CODE >210:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+26A text1 CODE >211:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+272 text1 CODE >211:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+284 text1 CODE >213:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+28A text1 CODE >214:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1C maintext CODE >75:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1C maintext CODE >76:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+21 maintext CODE >77:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+26 maintext CODE >78:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+31 maintext CODE >81:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+37 maintext CODE >82:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+3D maintext CODE >83:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+44 maintext CODE >84:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+4A maintext CODE >86:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+50 maintext CODE >87:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+56 maintext CODE >88:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+5D maintext CODE >89:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+63 maintext CODE >91:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+69 maintext CODE >92:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+6F maintext CODE >93:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+76 maintext CODE >94:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+7C maintext CODE >96:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+A3 maintext CODE >98:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+B8 maintext CODE >99:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+D2 maintext CODE >100:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+EC maintext CODE >102:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+10B maintext CODE >103:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+123 maintext CODE >104:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+13B maintext CODE >107:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+141 maintext CODE >108:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+14C maintext CODE >109:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+152 maintext CODE >110:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+158 maintext CODE >111:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+163 maintext CODE >112:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+16E maintext CODE >113:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+179 maintext CODE >114:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+17F maintext CODE >116:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+186 maintext CODE >118:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+18F maintext CODE >119:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+195 maintext CODE >121:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1A0 maintext CODE >122:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1A6 maintext CODE >124:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1AC maintext CODE >125:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1B7 maintext CODE >127:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1C2 maintext CODE >128:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1CD maintext CODE >129:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1D3 maintext CODE >131:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1D9 maintext CODE >132:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1DF maintext CODE >134:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1E7 maintext CODE >135:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1EF maintext CODE >136:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1F7 maintext CODE >138:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+1FD maintext CODE >139:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+203 maintext CODE >141:C:\Users\david\DavidU\ElectronicaDigital2\Proyecto1\PIC1\PIC1P1.X\PIC1P1main.c
+698 clrtext CODE >963:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+698 clrtext CODE >964:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+699 clrtext CODE >965:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+699 clrtext CODE >966:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69A clrtext CODE >967:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69B clrtext CODE >968:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69C clrtext CODE >969:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69D clrtext CODE >970:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69E clrtext CODE >971:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+69F clrtext CODE >972:C:\Users\david\AppData\Local\Temp\xcAsatg.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+___awdiv@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__Hspace_0 6B4 0 ABS 0 - -
+__Hspace_1 77 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+setupTimer1@carga 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+LCD_displayOnOff@blink 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+setupOsc@freq 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_T1CONbits 10 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_TMR0 1 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\david\AppData\Local\Temp\xcAsatg.o
+_cont 69 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+_main 38 0 CODE 0 maintext dist/default/production\PIC1P1.X.production.o
+_potS 63 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+_temp 68 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+LCD_entryMode_set@inc_dec 23 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+start 18 0 CODE 0 init C:\Users\david\AppData\Local\Temp\xcAsatg.o
+LCD_setDDRAM@address 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_LCD_displayOnOff A24 0 CODE 0 text8 dist/default/production\PIC1P1.X.production.o
+separar_numero@numaux 37 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+separar_numero@numero 2F 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_LCD_clearDisplay C14 0 CODE 0 text9 dist/default/production\PIC1P1.X.production.o
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+LCDprintText@texto 24 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_LCD_wRAM C6C 0 CODE 0 text25 dist/default/production\PIC1P1.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+setupTimer1@clkSrc 24 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_resTimer1 CD8 0 CODE 0 text29 dist/default/production\PIC1P1.X.production.o
+resTimer1@T1H 74 0 COMMON 1 cstackCOMMON dist/default/production\PIC1P1.X.production.o
+resTimer1@T1L 73 0 COMMON 1 cstackCOMMON dist/default/production\PIC1P1.X.production.o
+___awmod@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_initUSARTransmit A24 0 CODE 0 text13 dist/default/production\PIC1P1.X.production.o
+__size_of_resTimer1 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+setupOsc@clkSrc 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+setupTimer1@T1H 26 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+setupTimer1@T1L 25 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_SPIsendValue D5C 0 CODE 0 text20 dist/default/production\PIC1P1.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\david\AppData\Local\Temp\xcAsatg.o
+__end_of_LCD_wRAM C94 0 CODE 0 text25 dist/default/production\PIC1P1.X.production.o
+__end_of_SPIBufferVerify D5C 0 CODE 0 text22 dist/default/production\PIC1P1.X.production.o
+__size_of_initUSARTransmit 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+main@potTexto 3E 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_configuracion 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_UARTprintDigit CD8 0 CODE 0 text19 dist/default/production\PIC1P1.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_LCDprintText 8D4 0 CODE 0 text23 dist/default/production\PIC1P1.X.production.o
+_resTimer1 CB8 0 CODE 0 text29 dist/default/production\PIC1P1.X.production.o
+___awdiv@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_T1enableInterrupt D4E 0 CODE 0 text15 dist/default/production\PIC1P1.X.production.o
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_LCD_setDDRAM C42 0 CODE 0 text26 dist/default/production\PIC1P1.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_UARTprintCharacter 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+___awdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_SSPCONbits 14 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+LCD_displayOnOff@cursor 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_LCD_executeInstruction CF6 0 CODE 0 text27 dist/default/production\PIC1P1.X.production.o
+__size_of_initLCD 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_selectSlave 93C 0 CODE 0 text4 dist/default/production\PIC1P1.X.production.o
+__end_of___wmul 9DA 0 CODE 0 text16 dist/default/production\PIC1P1.X.production.o
+__size_of_SPIsendValue 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of_configuracion 804 0 CODE 0 text10 dist/default/production\PIC1P1.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_setupTimer1 B36 0 CODE 0 text11 dist/default/production\PIC1P1.X.production.o
+___awdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_displayOnOff A6C 0 CODE 0 text8 dist/default/production\PIC1P1.X.production.o
+__end_of___awdiv 6BC 0 CODE 0 text3 dist/default/production\PIC1P1.X.production.o
+__end_of___awmod 772 0 CODE 0 text2 dist/default/production\PIC1P1.X.production.o
+_SPIBufferVerify D4E 0 CODE 0 text22 dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_clearDisplay C42 0 CODE 0 text9 dist/default/production\PIC1P1.X.production.o
+__size_of_LCDprintText 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+initSPI_maestro@SPIfosc 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_UARTprintDigit CF6 0 CODE 0 text19 dist/default/production\PIC1P1.X.production.o
+?_strlen 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__size_of_LCD_displayOnOff 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\david\AppData\Local\Temp\xcAsatg.o
+___stacklo 0 0 ABS 0 - C:\Users\david\AppData\Local\Temp\xcAsatg.o
+__size_of_LCD_clearDisplay 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of_SPIsendValue D68 0 CODE 0 text20 dist/default/production\PIC1P1.X.production.o
+__size_of_LCD_setDDRAM 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+LCD_functionSet@lineNo 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+UARTprintDigit@digito 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+LCD_displayOnOff@on_off 26 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\PIC1P1.X.production.o
+SPIsendValue@valor 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+UARTprintCharacter@caracter 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_LCDprintText 93C 0 CODE 0 text23 dist/default/production\PIC1P1.X.production.o
+resTimer1@carga 70 0 COMMON 1 cstackCOMMON dist/default/production\PIC1P1.X.production.o
+_TRISAbits 85 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISBbits 86 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISEbits 89 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+selectSlave@slave 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_setDDRAM C6C 0 CODE 0 text26 dist/default/production\PIC1P1.X.production.o
+_T1enableInterrupt D40 0 CODE 0 text15 dist/default/production\PIC1P1.X.production.o
+clear_ram0 D30 0 CODE 0 clrtext dist/default/production\PIC1P1.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_separar_numero 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+main@contTexto 43 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_initLCD 5EA 0 CODE 0 text5 dist/default/production\PIC1P1.X.production.o
+__end_of_initSPI_maestro BAE 0 CODE 0 text14 dist/default/production\PIC1P1.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\david\AppData\Local\Temp\xcAsatg.o
+separar_numero@decenas 32 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 38 0 CODE 0 cinit -
+__end_of_strlen AB4 0 CODE 0 text24 dist/default/production\PIC1P1.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__stringbase AD2 0 STRING 0 strings dist/default/production\PIC1P1.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+LCD_functionSet@dataL 27 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__size_of_SPIBufferVerify 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+UARTprintText@i 28 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+separar_numero@centenas 31 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_PORTAbits 5 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTDbits 8 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTEbits 9 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__size_of_LCD_entryMode_set 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+___wmul 98C 0 CODE 0 text16 dist/default/production\PIC1P1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 6B4 0 ABS 0 - -
+__S1 77 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr BE4 0 CODE 0 text28 dist/default/production\PIC1P1.X.production.o
+_pot 6A 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_executeInstruction D14 0 CODE 0 text27 dist/default/production\PIC1P1.X.production.o
+_initSPI_maestro B74 0 CODE 0 text14 dist/default/production\PIC1P1.X.production.o
+LCDprintText@i 28 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+initUSARTransmit@BRG16 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_isr C14 0 CODE 0 text28 dist/default/production\PIC1P1.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+main@tempTexto 47 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+separar_numero@numaux2 35 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__stringtab AB4 0 STRING 0 strings dist/default/production\PIC1P1.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\david\AppData\Local\Temp\xcAsatg.o
+strlen@s 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+initUSARTransmit@BRGH 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+initUSARTransmit@vBRG 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+___awmod@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__ptext10 772 0 CODE 0 text10 dist/default/production\PIC1P1.X.production.o
+__ptext11 B36 0 CODE 0 text11 dist/default/production\PIC1P1.X.production.o
+__ptext12 BAE 0 CODE 0 text12 dist/default/production\PIC1P1.X.production.o
+__ptext13 9DA 0 CODE 0 text13 dist/default/production\PIC1P1.X.production.o
+__ptext14 B74 0 CODE 0 text14 dist/default/production\PIC1P1.X.production.o
+__ptext15 D40 0 CODE 0 text15 dist/default/production\PIC1P1.X.production.o
+__ptext16 98C 0 CODE 0 text16 dist/default/production\PIC1P1.X.production.o
+__ptext17 86C 0 CODE 0 text17 dist/default/production\PIC1P1.X.production.o
+__ptext18 D14 0 CODE 0 text18 dist/default/production\PIC1P1.X.production.o
+__ptext19 CD8 0 CODE 0 text19 dist/default/production\PIC1P1.X.production.o
+__ptext20 D5C 0 CODE 0 text20 dist/default/production\PIC1P1.X.production.o
+__ptext21 C94 0 CODE 0 text21 dist/default/production\PIC1P1.X.production.o
+__ptext22 D4E 0 CODE 0 text22 dist/default/production\PIC1P1.X.production.o
+__ptext23 8D4 0 CODE 0 text23 dist/default/production\PIC1P1.X.production.o
+__ptext24 A6C 0 CODE 0 text24 dist/default/production\PIC1P1.X.production.o
+__ptext25 C6C 0 CODE 0 text25 dist/default/production\PIC1P1.X.production.o
+__ptext26 C42 0 CODE 0 text26 dist/default/production\PIC1P1.X.production.o
+__ptext27 CF6 0 CODE 0 text27 dist/default/production\PIC1P1.X.production.o
+__ptext28 BE4 0 CODE 0 text28 dist/default/production\PIC1P1.X.production.o
+__ptext29 CB8 0 CODE 0 text29 dist/default/production\PIC1P1.X.production.o
+_comunicacion 58 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+___awdiv 5EA 0 CODE 0 text3 dist/default/production\PIC1P1.X.production.o
+___awmod 6BC 0 CODE 0 text2 dist/default/production\PIC1P1.X.production.o
+__end_of_selectSlave 98C 0 CODE 0 text4 dist/default/production\PIC1P1.X.production.o
+strlen@cp 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__pmaintext 38 0 CODE 0 maintext dist/default/production\PIC1P1.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_UARTprintText 86C 0 CODE 0 text17 dist/default/production\PIC1P1.X.production.o
+__size_of_setupOsc 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of_setupTimer1 B74 0 CODE 0 text11 dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_functionSet 86C 0 CODE 0 text6 dist/default/production\PIC1P1.X.production.o
+LCD_functionSet@dispFont 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_strlen A6C 0 CODE 0 text24 dist/default/production\PIC1P1.X.production.o
+LCD_entryMode_set@shift 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+SPIreadValue@variable 21 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of__stringtab AD4 0 STRING 0 strings dist/default/production\PIC1P1.X.production.o
+__end_of_LCD_entryMode_set B36 0 CODE 0 text7 dist/default/production\PIC1P1.X.production.o
+__size_of_UARTprintDigit 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__size_of_initSPI_maestro 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+separar_numero@unidades 33 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+end_of_initialization 30 0 CODE 0 cinit dist/default/production\PIC1P1.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 2D 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+?___awdiv 26 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+?___awmod 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_UARTprintCharacter D30 0 CODE 0 text18 dist/default/production\PIC1P1.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_initLCD 516 0 CODE 0 text5 dist/default/production\PIC1P1.X.production.o
+___awmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_setupOsc BAE 0 CODE 0 text12 dist/default/production\PIC1P1.X.production.o
+_SPIreadValue C94 0 CODE 0 text21 dist/default/production\PIC1P1.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_LCD_functionSet 804 0 CODE 0 text6 dist/default/production\PIC1P1.X.production.o
+__ptext1 414 0 CODE 0 text1 dist/default/production\PIC1P1.X.production.o
+__ptext2 6BC 0 CODE 0 text2 dist/default/production\PIC1P1.X.production.o
+__ptext3 5EA 0 CODE 0 text3 dist/default/production\PIC1P1.X.production.o
+__ptext4 93C 0 CODE 0 text4 dist/default/production\PIC1P1.X.production.o
+__ptext5 516 0 CODE 0 text5 dist/default/production\PIC1P1.X.production.o
+__ptext6 804 0 CODE 0 text6 dist/default/production\PIC1P1.X.production.o
+__ptext7 AF8 0 CODE 0 text7 dist/default/production\PIC1P1.X.production.o
+__ptext8 A24 0 CODE 0 text8 dist/default/production\PIC1P1.X.production.o
+__ptext9 C14 0 CODE 0 text9 dist/default/production\PIC1P1.X.production.o
+UARTprintText@texto 24 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_setupOsc BE4 0 CODE 0 text12 dist/default/production\PIC1P1.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+LCD_wRAM@data 22 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+_separar_numero 414 0 CODE 0 text1 dist/default/production\PIC1P1.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_LCD_executeInstruction 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_UARTprintCharacter D14 0 CODE 0 text18 dist/default/production\PIC1P1.X.production.o
+__size_of_UARTprintText 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of__initialization 30 0 CODE 0 cinit dist/default/production\PIC1P1.X.production.o
+___awmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_SPIreadValue 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_ANSELbits 188 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PIC1P1.X.production.o
+_LCD_entryMode_set AF8 0 CODE 0 text7 dist/default/production\PIC1P1.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_selectSlave 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_main 414 0 CODE 0 maintext dist/default/production\PIC1P1.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_setupTimer1 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__end_of_UARTprintText 8D4 0 CODE 0 text17 dist/default/production\PIC1P1.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_contS 5E 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\PIC1P1.X.production.o
+__end_of_SPIreadValue CB8 0 CODE 0 text21 dist/default/production\PIC1P1.X.production.o
+_IOCBbits 96 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_tempS 59 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+__end_of_separar_numero 516 0 CODE 0 text1 dist/default/production\PIC1P1.X.production.o
+_SSPSTATbits 94 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\PIC1P1.X.production.o
+_initUSARTransmit 9DA 0 CODE 0 text13 dist/default/production\PIC1P1.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__size_of_T1enableInterrupt 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_configuracion 772 0 CODE 0 text10 dist/default/production\PIC1P1.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\PIC1P1.X.production.o
+__size_of_LCD_functionSet 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+__pbssBANK0 4B 0 BANK0 1 bssBANK0 dist/default/production\PIC1P1.X.production.o
+__pstrings AB4 0 STRING 0 strings dist/default/production\PIC1P1.X.production.o
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+__size_of_LCD_wRAM 0 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+_ANSELHbits 189 0 ABS 0 - dist/default/production\PIC1P1.X.production.o
+setupTimer1@prescaler 20 0 BANK0 1 cstackBANK0 dist/default/production\PIC1P1.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text7 0 57C AF8 138 2
+cstackCOMMON 1 70 70 7 1
+cstackBANK0 1 20 20 4B 1
+intentry 0 4 8 556 2
+reset_vec 0 0 0 3 2
+strings 0 55A AB4 22 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
