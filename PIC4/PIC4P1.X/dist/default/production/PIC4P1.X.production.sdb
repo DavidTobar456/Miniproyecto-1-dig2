@@ -1,0 +1,492 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"17 C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+[v _ADCenableInterrupt ADCenableInterrupt `(v  1 e 1 0 ]
+"23
+[v _ADCenableAnalogPort ADCenableAnalogPort `(v  1 e 1 0 ]
+"92
+[v _ADCstartMeasure ADCstartMeasure `(v  1 e 1 0 ]
+"97
+[v _setupADC setupADC `(v  1 e 1 0 ]
+"112
+[v _setupOsc setupOsc `(v  1 e 1 0 ]
+"234
+[v _initSPI_multiesclavo initSPI_multiesclavo `(v  1 e 1 0 ]
+"251
+[v _SPIenableRInterrupt SPIenableRInterrupt `(v  1 e 1 0 ]
+"260
+[v _SPIBufferVerify SPIBufferVerify `(v  1 e 1 0 ]
+"286
+[v _UARTprintCharacter UARTprintCharacter `(v  1 e 1 0 ]
+"46 C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC4/PIC4P1.X/PIC4P1main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"60
+[v _main main `(v  1 e 1 0 ]
+"88
+[v _configuracion configuracion `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S246 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S255 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S260 . 1 `S246 1 . 1 0 `S255 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES260  1 e 1 @11 ]
+[s S41 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S49 . 1 `S41 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES49  1 e 1 @12 ]
+"657
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"664
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+[s S331 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"700
+[s S339 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T1GIV 1 0 :1:7 
+]
+[s S347 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+]
+[u S350 . 1 `S331 1 . 1 0 `S339 1 . 1 0 `S347 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES350  1 e 1 @16 ]
+"843
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S376 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"870
+[s S382 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S387 . 1 `S376 1 . 1 0 `S382 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES387  1 e 1 @20 ]
+[s S572 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1068
+[s S581 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S585 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S588 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S591 . 1 `S572 1 . 1 0 `S581 1 . 1 0 `S585 1 . 1 0 `S588 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES591  1 e 1 @24 ]
+"1133
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+[s S153 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1276
+[s S158 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S167 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S170 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S173 . 1 `S153 1 . 1 0 `S158 1 . 1 0 `S167 1 . 1 0 `S170 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES173  1 e 1 @31 ]
+[s S304 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S311 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S315 . 1 `S304 1 . 1 0 `S311 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES315  1 e 1 @129 ]
+[s S60 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1433
+[u S69 . 1 `S60 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES69  1 e 1 @133 ]
+[s S115 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1495
+[u S124 . 1 `S115 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES124  1 e 1 @134 ]
+[s S491 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1557
+[u S500 . 1 `S491 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES500  1 e 1 @135 ]
+[s S102 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+]
+"1677
+[u S107 . 1 `S102 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES107  1 e 1 @137 ]
+[s S22 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1718
+[u S30 . 1 `S22 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES30  1 e 1 @140 ]
+[s S220 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1882
+[s S226 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S231 . 1 `S220 1 . 1 0 `S226 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES231  1 e 1 @143 ]
+[s S402 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2231
+[s S411 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S422 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S442 . 1 `S402 1 . 1 0 `S411 1 . 1 0 `S416 1 . 1 0 `S422 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES442  1 e 1 @148 ]
+[s S278 . 1 `uc 1 IOCB 1 0 :8:0 
+]
+"2436
+[s S280 . 1 `uc 1 IOCB0 1 0 :1:0 
+`uc 1 IOCB1 1 0 :1:1 
+`uc 1 IOCB2 1 0 :1:2 
+`uc 1 IOCB3 1 0 :1:3 
+`uc 1 IOCB4 1 0 :1:4 
+`uc 1 IOCB5 1 0 :1:5 
+`uc 1 IOCB6 1 0 :1:6 
+`uc 1 IOCB7 1 0 :1:7 
+]
+[u S289 . 1 `S278 1 . 1 0 `S280 1 . 1 0 ]
+[v _IOCBbits IOCBbits `VES289  1 e 1 @150 ]
+[s S513 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2582
+[s S522 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S526 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S529 . 1 `S513 1 . 1 0 `S522 1 . 1 0 `S526 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES529  1 e 1 @152 ]
+"2642
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+[s S199 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2991
+[u S205 . 1 `S199 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES205  1 e 1 @159 ]
+[s S550 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3352
+[u S559 . 1 `S550 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES559  1 e 1 @391 ]
+[s S81 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"3404
+[u S90 . 1 `S81 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES90  1 e 1 @392 ]
+[s S136 . 1 `uc 1 ANS8 1 0 :1:0 
+`uc 1 ANS9 1 0 :1:1 
+`uc 1 ANS10 1 0 :1:2 
+`uc 1 ANS11 1 0 :1:3 
+`uc 1 ANS12 1 0 :1:4 
+`uc 1 ANS13 1 0 :1:5 
+]
+"3464
+[u S143 . 1 `S136 1 . 1 0 ]
+[v _ANSELHbits ANSELHbits `VES143  1 e 1 @393 ]
+"166 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S922 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"307
+[u S931 . 1 `S922 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES931  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2970
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"41 C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC4/PIC4P1.X/PIC4P1main.c
+[v _medicion medicion `i  1 e 2 0 ]
+"42
+[v _temperatura temperatura `uc  1 e 1 0 ]
+"60
+[v _main main `(v  1 e 1 0 ]
+{
+"68
+[v main@mapeo mapeo `i  1 a 2 6 ]
+"84
+} 0
+"88
+[v _configuracion configuracion `(v  1 e 1 0 ]
+{
+"130
+} 0
+"112 C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+[v _setupOsc setupOsc `(v  1 e 1 0 ]
+{
+[v setupOsc@freq freq `uc  1 a 1 wreg ]
+[v setupOsc@freq freq `uc  1 a 1 wreg ]
+[v setupOsc@clkSrc clkSrc `uc  1 p 1 2 ]
+[v setupOsc@freq freq `uc  1 a 1 4 ]
+"116
+} 0
+"97
+[v _setupADC setupADC `(v  1 e 1 0 ]
+{
+[v setupADC@Fosc Fosc `uc  1 a 1 wreg ]
+[v setupADC@Fosc Fosc `uc  1 a 1 wreg ]
+[v setupADC@VrefP VrefP `uc  1 p 1 2 ]
+[v setupADC@VrefN VrefN `uc  1 p 1 3 ]
+[v setupADC@channel channel `uc  1 p 1 4 ]
+"98
+[v setupADC@align align `uc  1 p 1 5 ]
+[v setupADC@Fosc Fosc `uc  1 a 1 7 ]
+"108
+} 0
+"234
+[v _initSPI_multiesclavo initSPI_multiesclavo `(v  1 e 1 0 ]
+{
+"249
+} 0
+"251
+[v _SPIenableRInterrupt SPIenableRInterrupt `(v  1 e 1 0 ]
+{
+"254
+} 0
+"17
+[v _ADCenableInterrupt ADCenableInterrupt `(v  1 e 1 0 ]
+{
+"21
+} 0
+"23
+[v _ADCenableAnalogPort ADCenableAnalogPort `(v  1 e 1 0 ]
+{
+[v ADCenableAnalogPort@puerto puerto `uc  1 a 1 wreg ]
+[v ADCenableAnalogPort@puerto puerto `uc  1 a 1 wreg ]
+[v ADCenableAnalogPort@puerto puerto `uc  1 a 1 4 ]
+"85
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 3 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 2 ]
+[v ___awdiv@counter counter `uc  1 a 1 1 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+[v ___awdiv@dividend dividend `i  1 p 2 10 ]
+"41
+} 0
+"92 C:/Users/david/DavidU/ElectronicaDigital2/Laboratorio2/Laboratorio/Lab2dig2.X/confPIC16F887.c
+[v _ADCstartMeasure ADCstartMeasure `(v  1 e 1 0 ]
+{
+"95
+} 0
+"46 C:/Users/david/DavidU/ElectronicaDigital2/Proyecto1/PIC4/PIC4P1.X/PIC4P1main.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"56
+} 0
